@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Astro : démarrer ou réutiliser le serveur",
+      "type": "process",
+      "command": "node",
+      "args": ["${workspaceFolder}/scripts/vscode-dev.mjs"],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": { "ASTRO_VSCODE_PORT": "4321" }
+      },
+      "isBackground": true,
+      "runOptions": { "instanceLimit": 1 },
+      "presentation": {
+        "reveal": "silent",
+        "focus": false,
+        "panel": "dedicated",
+        "showReuseMessage": false
+      },
+      "problemMatcher": {
+        "owner": "astro-vscode",
+        "pattern": {
+          "regexp": "^(.*):(\\d+):(\\d+): error: (.*)$",
+          "file": 1,
+          "line": 2,
+          "column": 3,
+          "message": 4
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "^ASTRO_VSCODE_STARTING$",
+          "endsPattern": "^ASTRO_VSCODE_READY$"
+        }
+      }
+    }
+  ]
+}
