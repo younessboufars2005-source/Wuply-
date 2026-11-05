@@ -1,0 +1,13 @@
+---
+import Base from '../../layouts/Base.astro';
+import ProductVisual from '../../components/ProductVisual.astro';
+import Configurator from '../../components/Configurator';
+import {locales,translations} from '../../i18n';
+import {product} from '../../data/catalog';
+export function getStaticPaths() { return locales.map(lang => ({params:{lang},props:{lang}})); }
+const {lang} = Astro.props; const t = translations[lang];
+---
+<Base lang={lang} title={`${product.name[lang]} — ${t.form}`} route="product/">
+ <div class="wrap page-heading"><span class="eyebrow">{t.screenless} / 01</span><h1>{product.name[lang]}</h1><p>{t.intro}</p></div>
+ <section class="wrap product-layout"><div class="gallery" aria-label={t.gallery}><ProductVisual lang={lang}/>{product.images.slice(1).map(img => <img src={img.src} alt={img.alt[lang]} width={img.width} height={img.height} loading="lazy"/>)}<div class="product-facts"><span>{t.screenless}</span><span>{t.interchangeable}</span></div><p>{t.designText}</p><span class="availability">{t.unavailable}</span></div><Configurator lang={lang} client:load/></section>
+</Base>

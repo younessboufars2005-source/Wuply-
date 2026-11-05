@@ -1,0 +1,11 @@
+---
+import { product } from '../data/catalog';
+import { translations } from '../i18n';
+import type { Locale } from '../types/catalog';
+interface Props { lang: Locale; compact?: boolean }
+const {lang, compact = false} = Astro.props;
+const t = translations[lang];
+---
+<div class:list={['product-visual', {compact}]}>
+ {product.images.length ? <img src={product.images[0].src} alt={product.images[0].alt[lang]} width={product.images[0].width} height={product.images[0].height} loading="eager" fetchpriority="high" /> : <div class="typographic-visual"><span class="tiny">{t.noImage}</span><span class="visual-word">{t.screenless}<span aria-hidden="true">.</span></span><div class="visual-rule"></div><span class="tiny">{t.interchangeable}<br/>{t.connected}</span></div>}
+</div>

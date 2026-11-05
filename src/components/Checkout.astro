@@ -1,0 +1,13 @@
+---
+import {translations} from '../i18n';
+import type {Locale, PaymentMethod} from '../types/catalog';
+interface Props {lang:Locale}
+const {lang} = Astro.props; const t = translations[lang];
+const methods: PaymentMethod[] = [{id:'online',enabled:false},{id:'cash-on-delivery',enabled:false}];
+---
+<form class="checkout-form" aria-describedby="checkout-note">
+ <p id="checkout-note" class="checkout-note">{t.checkoutText}</p>
+ <fieldset disabled><legend>{t.checkout}</legend><div class="form-grid">{(['fullName','email','phone','city','street','postalCode'] as const).map(key => <label>{t[key]}<input name={key} type={key === 'email' ? 'email' : key === 'phone' ? 'tel' : 'text'} autocomplete="off" /></label>)}</div></fieldset>
+ <fieldset disabled><legend>{t.payment}</legend>{methods.map(method => <label class="payment-option"><input type="radio" name="payment" disabled={!method.enabled}/>{method.id === 'online' ? t.online : t.cod}</label>)}</fieldset>
+ <button class="button dark full" type="button" disabled>{t.disabled}</button>
+</form>

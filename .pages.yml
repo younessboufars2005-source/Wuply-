@@ -1,0 +1,80 @@
+media:
+  input: public/images
+  output: /images
+content:
+  - name: catalogue
+    label: Catalogue
+    path: src/data/catalog.json
+    type: file
+    fields:
+      - name: product
+        label: Dispositif
+        type: object
+        fields:
+          - { name: id, label: Identifiant interne, type: string }
+          - name: name
+            label: Nom
+            type: object
+            fields:
+              - { name: fr, type: string }
+              - { name: en, type: string }
+              - { name: ar, type: string }
+          - name: availability
+            label: Disponibilité
+            type: select
+            options:
+              values: [available, unavailable]
+          - name: price
+            label: Prix
+            type: object
+            fields:
+              - { name: amount, label: Montant MAD, type: number }
+              - { name: currency, type: string }
+              - { name: validated, label: Prix validé, type: boolean }
+          - name: images
+            label: Images
+            type: object
+            list: true
+            fields:
+              - { name: src, type: image }
+              - { name: width, type: number }
+              - { name: height, type: number }
+              - name: alt
+                type: object
+                fields:
+                  - { name: fr, type: string }
+                  - { name: en, type: string }
+                  - { name: ar, type: string }
+      - name: straps
+        label: Bracelets
+        type: object
+        list: true
+        fields:
+          - { name: id, type: string }
+          - name: name
+            type: object
+            fields:
+              - { name: fr, type: string }
+              - { name: en, type: string }
+              - { name: ar, type: string }
+          - name: variants
+            type: object
+            list: true
+            fields:
+              - { name: id, type: string }
+              - name: name
+                type: object
+                fields:
+                  - { name: fr, type: string }
+                  - { name: en, type: string }
+                  - { name: ar, type: string }
+              - name: availability
+                type: select
+                options:
+                  values: [available, unavailable]
+              - name: price
+                type: object
+                fields:
+                  - { name: amount, type: number }
+                  - { name: currency, type: string }
+                  - { name: validated, type: boolean }

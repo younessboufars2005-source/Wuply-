@@ -1,0 +1,46 @@
+---
+import '../styles/global.css';
+import { site } from '../config/site';
+import { locales, translations } from '../i18n';
+import type { Locale } from '../types/catalog';
+interface Props { lang: Locale; title: string; description?: string; route?: string }
+const { lang, title, description, route = '' } = Astro.props;
+const t = translations[lang];
+const canonical = site.url ? new URL(`/${lang}/${route}`, site.url).href : undefined;
+---
+<!doctype html>
+<html lang={lang} dir={lang === 'ar' ? 'rtl' : 'ltr'}>
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title><meta name="description" content={description || t.intro} />
+    {(!site.indexable || route === 'cart/' || route === 'checkout/') && <meta name="robots" content="noindex, nofollow" />}
+    {canonical && <link rel="canonical" href={canonical} />}
+    {site.url && locales.map(l => <link rel="alternate" hreflang={l} href={new URL(`/${l}/${route}`, site.url).href} />)}
+    {site.url && <link rel="alternate" hreflang="x-default" href={new URL(`/fr/${route}`, site.url).href} />}
+    <meta property="og:title" content={title} /><meta property="og:description" content={description || t.intro} />
+    <meta property="og:type" content="website" /><meta property="og:locale" content={{fr:'fr_MA',en:'en_GB',ar:'ar_MA'}[lang]} />
+    {canonical && <meta property="og:url" content={canonical} />}
+    {canonical && <script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@type':'WebPage',name:title,description:description || t.intro,url:canonical,inLanguage:lang}).replaceAll('<','\\u003c')} />}
+    <meta name="theme-color" content="#171916" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip" href="#main">{t.skip}</a>
+    <header class="header">
+      <a class="wordmark" href={`/${lang}/`} aria-label={site.name || t.home}>
+        {site.logo ? <img src={site.logo} alt={site.name} width="120" height="30" /> : site.name || <span class="brand-symbol" aria-hidden="true">◒</span>}
+      </a>
+      <nav class="desktop-nav" aria-label={t.menu}>
+        <a href={`/${lang}/product/`} aria-current={route === 'product/' ? 'page' : undefined}>{t.product}</a>
+        <a href={`/${lang}/#experience`}>{t.connected}</a>
+      </nav>
+      <div class="header-tools">
+        <nav class="languages" aria-label="FR / EN / العربية">{locales.map(l => <a href={`/${l}/${route}`} lang={l} aria-current={l === lang ? 'true' : undefined}>{l.toUpperCase()}</a>)}</nav>
+        <a class="bag-link" href={`/${lang}/cart/`}>{t.cart}<span aria-hidden="true"> ↗</span></a>
+        <details class="mobile-menu"><summary aria-label={t.menu}>☰</summary><nav aria-label={t.menu}><a href={`/${lang}/product/`}>{t.product}</a><a href={`/${lang}/#experience`}>{t.connected}</a></nav></details>
+      </div>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="footer"><div class="footer-top"><span class="brand-symbol" aria-hidden="true">◒</span><p>{t.footer}</p><a href={`/${lang}/product/`}>{t.configure} ↗</a></div><div class="footer-bottom"><span>{t.demo} · {t.noShipping}</span><a href={`/${lang}/#information`}>{t.contact}</a></div></footer>
+  </body>
+</html>

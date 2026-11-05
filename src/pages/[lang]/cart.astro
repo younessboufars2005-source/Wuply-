@@ -1,0 +1,8 @@
+---
+import Base from '../../layouts/Base.astro';
+import Cart from '../../components/Cart';
+import {locales,translations} from '../../i18n';
+export function getStaticPaths() { return locales.map(lang => ({params:{lang},props:{lang}})); }
+const {lang} = Astro.props; const t = translations[lang];
+---
+<Base lang={lang} title={`${t.cart} — ${t.demo}`} route="cart/"><section class="wrap page-heading"><span class="eyebrow">{t.demo}</span><h1>{t.cart}</h1></section><section class="wrap cart-page"><Cart lang={lang} client:load/><noscript>{t.demoText}</noscript></section></Base>

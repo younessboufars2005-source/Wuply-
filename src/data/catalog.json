@@ -1,0 +1,10 @@
+{
+  "product": {
+    "id": "device",
+    "name": {"fr":"Bracelet connecté","en":"Connected band","ar":"سوار متصل"},
+    "images": [],
+    "availability": "unavailable",
+    "price": {"amount":800,"currency":"MAD","validated":false}
+  },
+  "straps": []
+}
