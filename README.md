@@ -19,10 +19,10 @@ La racine redirige vers `/fr/`. Pages : `/{fr,en,ar}/`, `product/`, `cart/`, `ch
 ## Données et activation
 
 - `src/config/site.ts` : identité, contacts, domaine, visibilité des prix et état commercial. Le nom interne n'est jamais rendu.
-- `src/data/catalog.json` : produit unique, bracelets et variantes partagés entre configurateur et panier. Le tarif envisagé de 800 MAD est non validé et masqué. Aucune variante inventée.
+- `src/data/catalog.json` : produit unique, bracelets et variantes partagés entre configurateur et panier. Le tarif envisagé de 800 MAD est non validé et masqué. 19 variantes de bracelets issues des planches fournies, sans prix ni stock inventés.
 - `src/i18n/index.ts` : toutes les traductions d'interface.
 - `.pages.yml` : catalogue préparé pour Pages CMS. Les textes éditoriaux restent dans le dictionnaire typé ; leur édition CMS demandera une collection dédiée en phase 2.
-- Images propres à placer dans `public/images/`, puis à renseigner avec dimensions et textes alternatifs trilingues. Sources fournisseur dans `assets/inbox/` (ignorées par Git). Aucune image produit fournie ou générée ; les compositions actuelles sont uniquement typographiques. Ne pas utiliser des captures fournisseur brutes.
+- 19 photos de bracelets dans `public/images/bracelets/`, avec dimensions et textes alternatifs trilingues. Sources et archive conservées dans `assets/inbox/bracelets/` (ignorées par Git). Le visuel du dispositif seul reste typographique. Traitement et vérifications : `docs/bracelet-images.md`.
 - La vente réelle doit être implémentée et auditée en phase 2. Les boutons actuels ajoutent exclusivement au panier démo, indépendamment des paramètres de vente. Les champs checkout sont désactivés, sans envoi réseau ni sauvegarde.
 - Le panier ne conserve que les identifiants et quantités, jamais les prix. Les montants sont recalculés depuis le catalogue ; une future commande nécessitera un recalcul serveur. Les erreurs de stockage sont affichées. Pas de synchronisation du panier entre onglets.
 

@@ -1,0 +1,12 @@
+---
+import { straps } from '../data/catalog';
+import { braceletMessages } from '../i18n/bracelets';
+import type { Locale } from '../types/catalog';
+interface Props {lang:Locale}
+const {lang} = Astro.props;
+const t = braceletMessages[lang];
+---
+{straps.map(collection => <div class="bracelet-collection"><h3>{collection.name[lang]}</h3><div class="bracelet-grid">{collection.variants.map(variant => <a class="bracelet-card" href={`/${lang}/product/?strap=${encodeURIComponent(variant.id)}#configuration`}>
+ {variant.image && <img src={variant.image.src} alt={variant.image.alt[lang]} width={variant.image.width} height={variant.image.height} loading="lazy" decoding="async"/>}
+ <h4>{variant.name[lang]}</h4><p>{variant.description?.[lang]}</p><span class="text-link">{t.details} ↗</span>
+</a>)}</div></div>)}

@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import ProductVisual from '../../components/ProductVisual.astro';
+import BraceletCollections from '../../components/BraceletCollections.astro';
 import { locales, translations } from '../../i18n';
 import { product } from '../../data/catalog';
 export function getStaticPaths() { return locales.map(lang => ({params:{lang},props:{lang}})); }
@@ -19,6 +20,6 @@ const t = translations[lang];
  </section>
  <section class="experience wrap" id="experience"><div class="experience-top"><span class="eyebrow">02 / {t.connected}</span><span aria-hidden="true">↗</span></div><h2>{t.appTitle}</h2><div class="experience-bottom"><span class="orbit" aria-hidden="true">↗</span><div><p>{t.appText}</p><span class="tiny">{t.appNote}</span></div></div></section>
  <section class="personal wrap"><span class="eyebrow">03 / {t.interchangeable}</span><div class="personal-content"><h2>{t.personalTitle}</h2><div><p>{t.personalText}</p><a class="button dark" href={`/${lang}/product/`}>{t.configure}<span>↗</span></a></div></div></section>
- <section class="collection wrap"><div class="collection-title"><h2>{t.collection}</h2><p>{t.collectionText}</p></div><a class="collection-row" href={`/${lang}/product/`}><span class="collection-number">01</span><h3>{product.name[lang]}</h3><span>{t.details} ↗</span></a></section>
+ <section class="collection wrap"><div class="collection-title"><h2>{t.collection}</h2><p>{t.collectionText}</p></div><a class="collection-row" href={`/${lang}/product/`}><span class="collection-number">01</span><h3>{product.name[lang]}</h3><span>{t.details} ↗</span></a><BraceletCollections lang={lang}/></section>
  <section class="information wrap" id="information"><div><span class="eyebrow">04 / {t.useful}</span><h2>{t.demoTitle}</h2><p>{t.demoText}</p></div><div class="faq">{[1,2,3].map(n => <details><summary>{t[`faq${n}` as 'faq1']}<span aria-hidden="true">+</span></summary><p>{t[`answer${n}` as 'answer1']}</p></details>)}</div></section>
 </Base>

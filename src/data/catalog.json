@@ -1,10 +1,514 @@
 {
   "product": {
     "id": "device",
-    "name": {"fr":"Bracelet connecté","en":"Connected band","ar":"سوار متصل"},
+    "name": {
+      "fr": "Bracelet connecté",
+      "en": "Connected band",
+      "ar": "سوار متصل"
+    },
     "images": [],
     "availability": "unavailable",
-    "price": {"amount":800,"currency":"MAD","validated":false}
+    "price": {
+      "amount": 800,
+      "currency": "MAD",
+      "validated": false
+    }
   },
-  "straps": []
+  "straps": [
+    {
+      "id": "classique",
+      "name": {
+        "fr": "Collection Classique",
+        "en": "Classic Collection",
+        "ar": "المجموعة الكلاسيكية"
+      },
+      "variants": [
+        {
+          "id": "classique-noir-noir",
+          "name": {
+            "fr": "Noir · finition noire",
+            "en": "Black · black finish",
+            "ar": "أسود · تشطيب أسود"
+          },
+          "description": {
+            "fr": "Textile noir, partie métallique à finition noire.",
+            "en": "Black textile, black metal finish.",
+            "ar": "نسيج أسود مع تشطيب معدني أسود."
+          },
+          "availability": "unavailable",
+          "demoSelectable": true,
+          "image": {
+            "src": "/images/bracelets/classique-noir-noir.webp",
+            "alt": {
+              "fr": "Noir · finition noire",
+              "en": "Black · black finish",
+              "ar": "أسود · تشطيب أسود"
+            },
+            "width": 360,
+            "height": 480
+          }
+        },
+        {
+          "id": "classique-marine-noir",
+          "name": {
+            "fr": "Bleu marine · finition noire",
+            "en": "Navy · black finish",
+            "ar": "أزرق داكن · تشطيب أسود"
+          },
+          "description": {
+            "fr": "Textile bleu marine, partie métallique à finition noire.",
+            "en": "Navy textile, black metal finish.",
+            "ar": "نسيج أزرق داكن مع تشطيب معدني أسود."
+          },
+          "availability": "unavailable",
+          "demoSelectable": true,
+          "image": {
+            "src": "/images/bracelets/classique-marine-noir.webp",
+            "alt": {
+              "fr": "Bleu marine · finition noire",
+              "en": "Navy · black finish",
+              "ar": "أزرق داكن · تشطيب أسود"
+            },
+            "width": 360,
+            "height": 480
+          }
+        },
+        {
+          "id": "classique-bordeaux-noir",
+          "name": {
+            "fr": "Bordeaux · finition noire",
+            "en": "Burgundy · black finish",
+            "ar": "عنابي · تشطيب أسود"
+          },
+          "description": {
+            "fr": "Textile bordeaux, partie métallique à finition noire.",
+            "en": "Burgundy textile, black metal finish.",
+            "ar": "نسيج عنابي مع تشطيب معدني أسود."
+          },
+          "availability": "unavailable",
+          "demoSelectable": true,
+          "image": {
+            "src": "/images/bracelets/classique-bordeaux-noir.webp",
+            "alt": {
+              "fr": "Bordeaux · finition noire",
+              "en": "Burgundy · black finish",
+              "ar": "عنابي · تشطيب أسود"
+            },
+            "width": 360,
+            "height": 480
+          }
+        },
+        {
+          "id": "classique-orange-noir",
+          "name": {
+            "fr": "Orange · finition noire",
+            "en": "Orange · black finish",
+            "ar": "برتقالي · تشطيب أسود"
+          },
+          "description": {
+            "fr": "Textile orange, partie métallique à finition noire.",
+            "en": "Orange textile, black metal finish.",
+            "ar": "نسيج برتقالي مع تشطيب معدني أسود."
+          },
+          "availability": "unavailable",
+          "demoSelectable": true,
+          "image": {
+            "src": "/images/bracelets/classique-orange-noir.webp",
+            "alt": {
+              "fr": "Orange · finition noire",
+              "en": "Orange · black finish",
+              "ar": "برتقالي · تشطيب أسود"
+            },
+            "width": 360,
+            "height": 480
+          }
+        },
+        {
+          "id": "classique-turquoise-noir",
+          "name": {
+            "fr": "Turquoise · finition noire",
+            "en": "Turquoise · black finish",
+            "ar": "فيروزي · تشطيب أسود"
+          },
+          "description": {
+            "fr": "Textile turquoise, partie métallique à finition noire.",
+            "en": "Turquoise textile, black metal finish.",
+            "ar": "نسيج فيروزي مع تشطيب معدني أسود."
+          },
+          "availability": "unavailable",
+          "demoSelectable": true,
+          "image": {
+            "src": "/images/bracelets/classique-turquoise-noir.webp",
+            "alt": {
+              "fr": "Turquoise · finition noire",
+              "en": "Turquoise · black finish",
+              "ar": "فيروزي · تشطيب أسود"
+            },
+            "width": 360,
+            "height": 480
+          }
+        },
+        {
+          "id": "classique-gris-noir",
+          "name": {
+            "fr": "Gris clair · finition noire",
+            "en": "Light grey · black finish",
+            "ar": "رمادي فاتح · تشطيب أسود"
+          },
+          "description": {
+            "fr": "Textile gris clair, partie métallique à finition noire.",
+            "en": "Light grey textile, black metal finish.",
+            "ar": "نسيج رمادي فاتح مع تشطيب معدني أسود."
+          },
+          "availability": "unavailable",
+          "demoSelectable": true,
+          "image": {
+            "src": "/images/bracelets/classique-gris-noir.webp",
+            "alt": {
+              "fr": "Gris clair · finition noire",
+              "en": "Light grey · black finish",
+              "ar": "رمادي فاتح · تشطيب أسود"
+            },
+            "width": 360,
+            "height": 480
+          }
+        },
+        {
+          "id": "classique-beige-noir",
+          "name": {
+            "fr": "Beige · finition noire",
+            "en": "Beige · black finish",
+            "ar": "بيج · تشطيب أسود"
+          },
+          "description": {
+            "fr": "Textile beige, partie métallique à finition noire.",
+            "en": "Beige textile, black metal finish.",
+            "ar": "نسيج بيج مع تشطيب معدني أسود."
+          },
+          "availability": "unavailable",
+          "demoSelectable": true,
+          "image": {
+            "src": "/images/bracelets/classique-beige-noir.webp",
+            "alt": {
+              "fr": "Beige · finition noire",
+              "en": "Beige · black finish",
+              "ar": "بيج · تشطيب أسود"
+            },
+            "width": 360,
+            "height": 480
+          }
+        },
+        {
+          "id": "classique-marron-noir",
+          "name": {
+            "fr": "Marron · finition noire",
+            "en": "Brown · black finish",
+            "ar": "بني · تشطيب أسود"
+          },
+          "description": {
+            "fr": "Textile marron, partie métallique à finition noire.",
+            "en": "Brown textile, black metal finish.",
+            "ar": "نسيج بني مع تشطيب معدني أسود."
+          },
+          "availability": "unavailable",
+          "demoSelectable": true,
+          "image": {
+            "src": "/images/bracelets/classique-marron-noir.webp",
+            "alt": {
+              "fr": "Marron · finition noire",
+              "en": "Brown · black finish",
+              "ar": "بني · تشطيب أسود"
+            },
+            "width": 360,
+            "height": 480
+          }
+        },
+        {
+          "id": "classique-olive-noir",
+          "name": {
+            "fr": "Vert olive · finition noire",
+            "en": "Olive green · black finish",
+            "ar": "أخضر زيتوني · تشطيب أسود"
+          },
+          "description": {
+            "fr": "Textile vert olive, partie métallique à finition noire.",
+            "en": "Olive green textile, black metal finish.",
+            "ar": "نسيج أخضر زيتوني مع تشطيب معدني أسود."
+          },
+          "availability": "unavailable",
+          "demoSelectable": true,
+          "image": {
+            "src": "/images/bracelets/classique-olive-noir.webp",
+            "alt": {
+              "fr": "Vert olive · finition noire",
+              "en": "Olive green · black finish",
+              "ar": "أخضر زيتوني · تشطيب أسود"
+            },
+            "width": 360,
+            "height": 480
+          }
+        },
+        {
+          "id": "classique-bleu-clair-noir",
+          "name": {
+            "fr": "Bleu clair · finition noire",
+            "en": "Light blue · black finish",
+            "ar": "أزرق فاتح · تشطيب أسود"
+          },
+          "description": {
+            "fr": "Textile bleu clair, partie métallique à finition noire.",
+            "en": "Light blue textile, black metal finish.",
+            "ar": "نسيج أزرق فاتح مع تشطيب معدني أسود."
+          },
+          "availability": "unavailable",
+          "demoSelectable": true,
+          "image": {
+            "src": "/images/bracelets/classique-bleu-clair-noir.webp",
+            "alt": {
+              "fr": "Bleu clair · finition noire",
+              "en": "Light blue · black finish",
+              "ar": "أزرق فاتح · تشطيب أسود"
+            },
+            "width": 360,
+            "height": 480
+          }
+        },
+        {
+          "id": "classique-beige-dore",
+          "name": {
+            "fr": "Beige · finition dorée",
+            "en": "Beige · gold-tone finish",
+            "ar": "بيج · تشطيب ذهبي"
+          },
+          "description": {
+            "fr": "Textile beige, partie métallique à finition dorée.",
+            "en": "Beige textile, gold-tone metal finish.",
+            "ar": "نسيج بيج مع تشطيب معدني ذهبي."
+          },
+          "availability": "unavailable",
+          "demoSelectable": true,
+          "image": {
+            "src": "/images/bracelets/classique-beige-dore.webp",
+            "alt": {
+              "fr": "Beige · finition dorée",
+              "en": "Beige · gold-tone finish",
+              "ar": "بيج · تشطيب ذهبي"
+            },
+            "width": 360,
+            "height": 480
+          }
+        },
+        {
+          "id": "classique-marron-dore",
+          "name": {
+            "fr": "Marron · finition dorée",
+            "en": "Brown · gold-tone finish",
+            "ar": "بني · تشطيب ذهبي"
+          },
+          "description": {
+            "fr": "Textile marron, partie métallique à finition dorée.",
+            "en": "Brown textile, gold-tone metal finish.",
+            "ar": "نسيج بني مع تشطيب معدني ذهبي."
+          },
+          "availability": "unavailable",
+          "demoSelectable": true,
+          "image": {
+            "src": "/images/bracelets/classique-marron-dore.webp",
+            "alt": {
+              "fr": "Marron · finition dorée",
+              "en": "Brown · gold-tone finish",
+              "ar": "بني · تشطيب ذهبي"
+            },
+            "width": 360,
+            "height": 480
+          }
+        },
+        {
+          "id": "classique-noir-dore",
+          "name": {
+            "fr": "Noir · finition dorée",
+            "en": "Black · gold-tone finish",
+            "ar": "أسود · تشطيب ذهبي"
+          },
+          "description": {
+            "fr": "Textile noir, partie métallique à finition dorée.",
+            "en": "Black textile, gold-tone metal finish.",
+            "ar": "نسيج أسود مع تشطيب معدني ذهبي."
+          },
+          "availability": "unavailable",
+          "demoSelectable": true,
+          "image": {
+            "src": "/images/bracelets/classique-noir-dore.webp",
+            "alt": {
+              "fr": "Noir · finition dorée",
+              "en": "Black · gold-tone finish",
+              "ar": "أسود · تشطيب ذهبي"
+            },
+            "width": 360,
+            "height": 480
+          }
+        },
+        {
+          "id": "classique-gris-dore",
+          "name": {
+            "fr": "Gris clair · finition dorée",
+            "en": "Light grey · gold-tone finish",
+            "ar": "رمادي فاتح · تشطيب ذهبي"
+          },
+          "description": {
+            "fr": "Textile gris clair, partie métallique à finition dorée.",
+            "en": "Light grey textile, gold-tone metal finish.",
+            "ar": "نسيج رمادي فاتح مع تشطيب معدني ذهبي."
+          },
+          "availability": "unavailable",
+          "demoSelectable": true,
+          "image": {
+            "src": "/images/bracelets/classique-gris-dore.webp",
+            "alt": {
+              "fr": "Gris clair · finition dorée",
+              "en": "Light grey · gold-tone finish",
+              "ar": "رمادي فاتح · تشطيب ذهبي"
+            },
+            "width": 360,
+            "height": 480
+          }
+        },
+        {
+          "id": "classique-bordeaux-dore",
+          "name": {
+            "fr": "Bordeaux · finition dorée",
+            "en": "Burgundy · gold-tone finish",
+            "ar": "عنابي · تشطيب ذهبي"
+          },
+          "description": {
+            "fr": "Textile bordeaux, partie métallique à finition dorée.",
+            "en": "Burgundy textile, gold-tone metal finish.",
+            "ar": "نسيج عنابي مع تشطيب معدني ذهبي."
+          },
+          "availability": "unavailable",
+          "demoSelectable": true,
+          "image": {
+            "src": "/images/bracelets/classique-bordeaux-dore.webp",
+            "alt": {
+              "fr": "Bordeaux · finition dorée",
+              "en": "Burgundy · gold-tone finish",
+              "ar": "عنابي · تشطيب ذهبي"
+            },
+            "width": 360,
+            "height": 480
+          }
+        }
+      ]
+    },
+    {
+      "id": "originale",
+      "name": {
+        "fr": "Collection Originale",
+        "en": "Original Collection",
+        "ar": "المجموعة الأصلية"
+      },
+      "variants": [
+        {
+          "id": "original-turquoise-horloge",
+          "name": {
+            "fr": "Turquoise · Horloge",
+            "en": "Turquoise · Clock",
+            "ar": "فيروزي · ساعة"
+          },
+          "description": {
+            "fr": "Turquoise, motif horloge et finition métallique grise.",
+            "en": "Turquoise, clock design and grey metal finish.",
+            "ar": "فيروزي بنقشة ساعة وتشطيب معدني رمادي."
+          },
+          "availability": "unavailable",
+          "demoSelectable": true,
+          "image": {
+            "src": "/images/bracelets/original-turquoise-horloge.webp",
+            "alt": {
+              "fr": "Turquoise · Horloge",
+              "en": "Turquoise · Clock",
+              "ar": "فيروزي · ساعة"
+            },
+            "width": 360,
+            "height": 480
+          }
+        },
+        {
+          "id": "original-marine-ours",
+          "name": {
+            "fr": "Bleu marine · Ours",
+            "en": "Navy · Bear",
+            "ar": "أزرق داكن · دب"
+          },
+          "description": {
+            "fr": "Bleu marine, motif ours et finition métallique noire.",
+            "en": "Navy, bear design and black metal finish.",
+            "ar": "أزرق داكن بنقشة دب وتشطيب معدني أسود."
+          },
+          "availability": "unavailable",
+          "demoSelectable": true,
+          "image": {
+            "src": "/images/bracelets/original-marine-ours.webp",
+            "alt": {
+              "fr": "Bleu marine · Ours",
+              "en": "Navy · Bear",
+              "ar": "أزرق داكن · دب"
+            },
+            "width": 360,
+            "height": 480
+          }
+        },
+        {
+          "id": "original-blanc-londres",
+          "name": {
+            "fr": "Blanc · Bus londonien",
+            "en": "White · London bus",
+            "ar": "أبيض · حافلة لندن"
+          },
+          "description": {
+            "fr": "Blanc, motif bus londonien et finition métallique grise.",
+            "en": "White, London bus design and grey metal finish.",
+            "ar": "أبيض بنقشة حافلة لندن وتشطيب معدني رمادي."
+          },
+          "availability": "unavailable",
+          "demoSelectable": true,
+          "image": {
+            "src": "/images/bracelets/original-blanc-londres.webp",
+            "alt": {
+              "fr": "Blanc · Bus londonien",
+              "en": "White · London bus",
+              "ar": "أبيض · حافلة لندن"
+            },
+            "width": 360,
+            "height": 480
+          }
+        },
+        {
+          "id": "original-noir-faucon",
+          "name": {
+            "fr": "Noir · Faucon",
+            "en": "Black · Falcon",
+            "ar": "أسود · صقر"
+          },
+          "description": {
+            "fr": "Noir, motif faucon et finition métallique noire.",
+            "en": "Black, falcon design and black metal finish.",
+            "ar": "أسود بنقشة صقر وتشطيب معدني أسود."
+          },
+          "availability": "unavailable",
+          "demoSelectable": true,
+          "image": {
+            "src": "/images/bracelets/original-noir-faucon.webp",
+            "alt": {
+              "fr": "Noir · Faucon",
+              "en": "Black · Falcon",
+              "ar": "أسود · صقر"
+            },
+            "width": 360,
+            "height": 480
+          }
+        }
+      ]
+    }
+  ]
 }

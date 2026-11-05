@@ -2,9 +2,11 @@ export const CART_KEY = 'wearable-cart-v1';
 export function normalizeCart(raw, productId, variantIds = []) {
   if (!Array.isArray(raw)) throw new Error('Invalid cart');
   const validQuantity = n => Number.isInteger(n) && n >= 1 && n <= 99;
-  return raw.slice(0, 50).filter(item => item && item.configuration?.productId === productId && validQuantity(item.quantity))
+  return raw.slice(0, 50).filter(item => item && item.configuration?.productId === productId && validQuantity(item.quantity)
+    && (!item.configuration.itemType || (item.configuration.itemType === 'strap' && variantIds.includes(item.configuration.strapId))))
     .map(item => ({ quantity: item.quantity, configuration: {
       productId,
+      ...(item.configuration.itemType === 'strap' ? { itemType: 'strap' } : {}),
       ...(variantIds.includes(item.configuration.strapId) ? { strapId: item.configuration.strapId } : {}),
       extras: (Array.isArray(item.configuration.extras) ? item.configuration.extras : [])
         .filter(e => e && variantIds.includes(e.variantId) && validQuantity(e.quantity))
@@ -13,7 +15,7 @@ export function normalizeCart(raw, productId, variantIds = []) {
     }}));
 }
 export function configurationKey(configuration) {
-  return JSON.stringify([configuration.productId, configuration.strapId || '', [...configuration.extras].sort((a,b) => a.variantId.localeCompare(b.variantId))]);
+  return JSON.stringify([configuration.productId, configuration.itemType || 'device', configuration.strapId || '', [...configuration.extras].sort((a,b) => a.variantId.localeCompare(b.variantId))]);
 }
 export function addItem(items, configuration, quantity) {
   const key = configurationKey(configuration);

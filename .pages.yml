@@ -72,6 +72,25 @@ content:
                 type: select
                 options:
                   values: [available, unavailable]
+              - { name: demoSelectable, label: Sélection en démonstration, type: boolean }
+              - name: description
+                type: object
+                fields:
+                  - { name: fr, type: string }
+                  - { name: en, type: string }
+                  - { name: ar, type: string }
+              - name: image
+                type: object
+                fields:
+                  - { name: src, type: image }
+                  - { name: width, type: number }
+                  - { name: height, type: number }
+                  - name: alt
+                    type: object
+                    fields:
+                      - { name: fr, type: string }
+                      - { name: en, type: string }
+                      - { name: ar, type: string }
               - name: price
                 type: object
                 fields:
