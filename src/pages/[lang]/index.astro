@@ -1,25 +1,32 @@
 ---
 import Base from '../../layouts/Base.astro';
-import ProductVisual from '../../components/ProductVisual.astro';
 import BraceletCollections from '../../components/BraceletCollections.astro';
 import { locales, translations } from '../../i18n';
-import { product } from '../../data/catalog';
+import { storefront } from '../../i18n/storefront';
+import { straps } from '../../data/catalog';
+import { visuals, visualAlt } from '../../data/visuals';
 export function getStaticPaths() { return locales.map(lang => ({params:{lang},props:{lang}})); }
 const {lang} = Astro.props;
-const t = translations[lang];
+const s = storefront[lang]; const t = translations[lang]; const alt = visualAlt[lang];
+const first = straps[0].variants[0];
 ---
-<Base lang={lang} title={`${t.hero.replace('\n', ' ')} — ${t.product}`}>
- <section class="hero wrap">
-  <div class="hero-meta"><span class="eyebrow"><span class="status-dot"></span>{t.eyebrow}</span><span class="edition">{t.screenless} / 01</span></div>
-  <h1>{t.hero}</h1>
-  <div class="hero-bottom"><p>{t.intro}</p><a class="button light" href={`/${lang}/product/`}>{t.configure}<span>↗</span></a><span class="scroll-mark" aria-hidden="true">↓</span></div>
+<Base lang={lang} title={s.title} description={s.description}>
+ <section class="store-hero wrap">
+  <div class="store-hero-copy"><span class="eyebrow">{s.tag}</span><h1>{s.hero}</h1><p>{s.intro}</p><a class="button light" href={`/${lang}/catalog/`}>{s.discover}<span>↗</span></a></div>
+  <figure class="hero-art">{visuals.hero ? <img src={visuals.hero.src} width={visuals.hero.width} height={visuals.hero.height} alt={alt.hero} fetchpriority="high" loading="eager"/> : <img class="hero-fallback" src={first.image!.src} width="360" height="480" alt={first.name[lang]} fetchpriority="high" loading="eager"/>}<figcaption>{visuals.hero?.generated ? s.ad : s.real}</figcaption></figure>
+  <div class="hero-baseline"><span>01 — 19</span><a href="#collections">{s.navCollections}<span aria-hidden="true">↓</span></a><span>{s.colors}</span></div>
  </section>
- <section class="design-section wrap" id="design">
-   <div class="section-head"><span class="eyebrow">{t.chapter}</span><span aria-hidden="true">↙</span></div>
-   <div class="design-grid"><ProductVisual lang={lang}/><div class="design-copy"><h2>{t.design}</h2><p>{t.designText}</p><a class="text-link" href={`/${lang}/product/`}>{t.discover} ↗</a><ol class="feature-list"><li>{t.screenless}</li><li>{t.interchangeable}</li><li>{t.connected}</li></ol></div></div>
+ <section class="collection-editorial wrap" id="collections">
+  <div class="editorial-heading" data-reveal><span class="eyebrow">{s.collectionsLabel}</span><h2>{s.collectionsTitle}</h2></div>
+  <div class="collection-panels">{straps.map((collection,i) => {
+   const visual = i === 0 ? visuals.classic : visuals.original;
+   return <article class:list={['collection-panel',i === 1 && 'collection-panel--original']} data-reveal><a class="collection-panel-image" href={`/${lang}/catalog/#${collection.id}`} tabindex="-1" aria-hidden="true">{visual ? <><img src={visual.src} width={visual.width} height={visual.height} alt={i === 0 ? alt.classic : alt.original} loading="lazy"/><span class="panel-credit">{s.ad}</span></> : <div class="collection-product-pair">{[collection.variants[0],collection.variants[i === 0 ? 10 : 1]].map(v => <img src={v.image!.src} width="360" height="480" alt="" loading="lazy"/>)}</div>}</a><div class="collection-panel-copy"><span class="eyebrow">0{i+1} / {collection.variants.length}</span><h3>{collection.name[lang]}</h3><p>{i === 0 ? s.classicText : s.originalText}</p><a class="button light" href={`/${lang}/catalog/#${collection.id}`}>{s.explore}<span>↗</span></a></div></article>;
+  })}</div>
  </section>
- <section class="experience wrap" id="experience"><div class="experience-top"><span class="eyebrow">02 / {t.connected}</span><span aria-hidden="true">↗</span></div><h2>{t.appTitle}</h2><div class="experience-bottom"><span class="orbit" aria-hidden="true">↗</span><div><p>{t.appText}</p><span class="tiny">{t.appNote}</span></div></div></section>
- <section class="personal wrap"><span class="eyebrow">03 / {t.interchangeable}</span><div class="personal-content"><h2>{t.personalTitle}</h2><div><p>{t.personalText}</p><a class="button dark" href={`/${lang}/product/`}>{t.configure}<span>↗</span></a></div></div></section>
- <section class="collection wrap"><div class="collection-title"><h2>{t.collection}</h2><p>{t.collectionText}</p></div><a class="collection-row" href={`/${lang}/product/`}><span class="collection-number">01</span><h3>{product.name[lang]}</h3><span>{t.details} ↗</span></a><BraceletCollections lang={lang}/></section>
- <section class="information wrap" id="information"><div><span class="eyebrow">04 / {t.useful}</span><h2>{t.demoTitle}</h2><p>{t.demoText}</p></div><div class="faq">{[1,2,3].map(n => <details><summary>{t[`faq${n}` as 'faq1']}<span aria-hidden="true">+</span></summary><p>{t[`answer${n}` as 'answer1']}</p></details>)}</div></section>
+ <section class="featured-products wrap" id="catalogue"><div class="section-title" data-reveal><div><span class="eyebrow">02 / {s.navCatalog}</span><h2>{s.selection}</h2><p>{s.selectionText}</p></div><a class="text-link" href={`/${lang}/catalog/`}>{s.all} ↗</a></div><BraceletCollections lang={lang} featured/></section>
+ {visuals.lifestyle && <section class="lifestyle-editorial" id="experience"><img src={visuals.lifestyle.src} width={visuals.lifestyle.width} height={visuals.lifestyle.height} alt={alt.lifestyle} loading="lazy"/><div class="lifestyle-copy wrap" data-reveal><span class="eyebrow">03 / {s.tag}</span><h2>{s.lifestyle}</h2><p>{s.lifestyleText}</p><a class="button light" href={`/${lang}/catalog/`}>{s.discover} ↗</a></div><span class="editorial-credit">{s.ad}</span></section>}
+ <section class="daily-strip wrap" aria-label={s.lifestyleText}>{[visuals.everyday,visuals.office].filter(Boolean).map((visual,i) => <figure data-reveal><img src={visual!.src} width={visual!.width} height={visual!.height} alt={i === 0 ? alt.everyday : alt.office} loading="lazy"/><figcaption>{s.lifestyleText}<span class="tiny">{s.ad}</span></figcaption></figure>)}</section>
+ <section class="style-editorial wrap"><div class="style-copy" data-reveal><span class="eyebrow">04 / {s.colors}</span><h2>{s.personal}</h2><p>{s.personalText}</p><a class="button light" href={`/${lang}/product/`}>{s.personalCta}<span>↗</span></a></div><div class="style-images" data-reveal>{visuals.personal ? <img class="style-ad" src={visuals.personal.src} width={visuals.personal.width} height={visuals.personal.height} alt={alt.personal} loading="lazy"/> : [straps[0].variants[4],straps[0].variants[10],straps[1].variants[2]].map(v => <a href={`/${lang}/product/?strap=${v.id}#configuration`}><img src={v.image!.src} alt={v.name[lang]} width="360" height="480" loading="lazy"/></a>)}</div></section>
+ <section class="detail-editorial wrap" id="details"><div class="detail-image" data-reveal>{visuals.detail ? <figure><img src={visuals.detail.src} width={visuals.detail.width} height={visuals.detail.height} alt={alt.detail} loading="lazy"/><figcaption>{s.ad}</figcaption></figure> : <img src={straps[0].variants[12].image!.src} alt={straps[0].variants[12].name[lang]} width="360" height="480" loading="lazy"/>}{visuals.desk && <img class="detail-inset" src={visuals.desk.src} width={visuals.desk.width} height={visuals.desk.height} alt={alt.desk} loading="lazy"/>}</div><div class="detail-copy" data-reveal><span class="eyebrow">05 / {s.detailsLabel}</span><h2>{s.detailsTitle}</h2><p>{s.detailsText}</p><a class="text-link" href={`/${lang}/catalog/`}>{s.all} ↗</a>{visuals.turquoise && <figure class="detail-inset"><img src={visuals.turquoise.src} width={visuals.turquoise.width} height={visuals.turquoise.height} alt={alt.turquoise} loading="lazy"/><figcaption class="tiny">{s.ad}</figcaption></figure>}</div></section>
+ <section class="information store-information wrap" id="information"><div><span class="eyebrow">{s.help}</span><h2>{s.helpTitle}</h2><p>{s.helpText}</p><p class="compatibility-note">{s.compatibility}</p></div><div class="faq"><details><summary>{t.faq1}<span aria-hidden="true">+</span></summary><p>{t.answer1}</p></details><details id="delivery"><summary>{s.shipping}<span aria-hidden="true">+</span></summary><p>{s.notActive}</p></details><details id="returns"><summary>{s.returns}<span aria-hidden="true">+</span></summary><p>{s.notActive}</p></details><details id="legal"><summary>{s.legal}<span aria-hidden="true">+</span></summary><p>{s.independent}</p><p>{s.commercial}</p></details></div></section>
 </Base>

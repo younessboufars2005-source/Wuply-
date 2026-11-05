@@ -14,7 +14,9 @@ npm run build
 npm run preview
 ```
 
-La racine redirige vers `/fr/`. Pages : `/{fr,en,ar}/`, `product/`, `cart/`, `checkout/`.
+La racine redirige vers `/fr/`. Pages : `/{fr,en,ar}/`, `catalog/`, `product/`, `cart/`, `checkout/`.
+
+La refonte Dark Tech Luxury, les 10 visuels publicitaires et les vérifications sont documentés dans `docs/premium-redesign.md`. Après une build : `node scripts/verify-storefront.mjs` vérifie les routes générées, les liens et les images.
 
 ## Données et activation
 

@@ -1,0 +1,12 @@
+---
+import Base from '../../layouts/Base.astro';
+import BraceletCollections from '../../components/BraceletCollections.astro';
+import { locales } from '../../i18n';
+import { storefront } from '../../i18n/storefront';
+export function getStaticPaths(){return locales.map(lang=>({params:{lang},props:{lang}}));}
+const {lang}=Astro.props;const s=storefront[lang];
+---
+<Base lang={lang} title={`${s.catalog} — ${s.colors}`} description={s.description} route="catalog/">
+ <section class="wrap catalog-heading"><span class="eyebrow">{s.tag}</span><h1>{s.catalog}</h1><div><p>{s.catalogIntro}</p><nav aria-label={s.navCollections}><a href="#classique">{s.classic}<span>15</span></a><a href="#originale">{s.original}<span>04</span></a></nav></div></section>
+ <section class="wrap catalog-page"><BraceletCollections lang={lang}/><p class="catalog-note">{s.compatibility}</p></section>
+</Base>
