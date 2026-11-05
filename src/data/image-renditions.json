@@ -1,0 +1,718 @@
+{
+  "/images/bracelets/classique-noir-noir.webp": {
+    "entries": [
+      {
+        "src": "/images/bracelets/responsive/classique-noir-noir-90.webp",
+        "width": 90,
+        "height": 120
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-noir-noir-180.webp",
+        "width": 180,
+        "height": 240
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-noir-noir-270.webp",
+        "width": 270,
+        "height": 360
+      }
+    ],
+    "maxDisplayWidth": 270,
+    "sourceWidth": 286,
+    "sourceHeight": 345,
+    "role": "catalogue",
+    "source": "assets/inbox/bracelets/classic-logo-repaired.png"
+  },
+  "/images/bracelets/classique-marine-noir.webp": {
+    "entries": [
+      {
+        "src": "/images/bracelets/responsive/classique-marine-noir-90.webp",
+        "width": 90,
+        "height": 120
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-marine-noir-180.webp",
+        "width": 180,
+        "height": 240
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-marine-noir-270.webp",
+        "width": 270,
+        "height": 360
+      }
+    ],
+    "maxDisplayWidth": 270,
+    "sourceWidth": 286,
+    "sourceHeight": 345,
+    "role": "catalogue",
+    "source": "assets/inbox/bracelets/classic-logo-repaired.png"
+  },
+  "/images/bracelets/classique-bordeaux-noir.webp": {
+    "entries": [
+      {
+        "src": "/images/bracelets/responsive/classique-bordeaux-noir-90.webp",
+        "width": 90,
+        "height": 120
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-bordeaux-noir-180.webp",
+        "width": 180,
+        "height": 240
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-bordeaux-noir-270.webp",
+        "width": 270,
+        "height": 360
+      }
+    ],
+    "maxDisplayWidth": 270,
+    "sourceWidth": 286,
+    "sourceHeight": 345,
+    "role": "catalogue",
+    "source": "assets/inbox/bracelets/classic-logo-repaired.png"
+  },
+  "/images/bracelets/classique-orange-noir.webp": {
+    "entries": [
+      {
+        "src": "/images/bracelets/responsive/classique-orange-noir-90.webp",
+        "width": 90,
+        "height": 120
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-orange-noir-180.webp",
+        "width": 180,
+        "height": 240
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-orange-noir-270.webp",
+        "width": 270,
+        "height": 360
+      }
+    ],
+    "maxDisplayWidth": 270,
+    "sourceWidth": 286,
+    "sourceHeight": 345,
+    "role": "catalogue",
+    "source": "assets/inbox/bracelets/classic-logo-repaired.png"
+  },
+  "/images/bracelets/classique-turquoise-noir.webp": {
+    "entries": [
+      {
+        "src": "/images/bracelets/responsive/classique-turquoise-noir-90.webp",
+        "width": 90,
+        "height": 120
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-turquoise-noir-180.webp",
+        "width": 180,
+        "height": 240
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-turquoise-noir-270.webp",
+        "width": 270,
+        "height": 360
+      }
+    ],
+    "maxDisplayWidth": 270,
+    "sourceWidth": 286,
+    "sourceHeight": 345,
+    "role": "catalogue",
+    "source": "assets/inbox/bracelets/classic-logo-repaired.png"
+  },
+  "/images/bracelets/classique-gris-noir.webp": {
+    "entries": [
+      {
+        "src": "/images/bracelets/responsive/classique-gris-noir-90.webp",
+        "width": 90,
+        "height": 120
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-gris-noir-180.webp",
+        "width": 180,
+        "height": 240
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-gris-noir-270.webp",
+        "width": 270,
+        "height": 360
+      }
+    ],
+    "maxDisplayWidth": 270,
+    "sourceWidth": 286,
+    "sourceHeight": 333,
+    "role": "catalogue",
+    "source": "assets/inbox/bracelets/classic-logo-repaired.png"
+  },
+  "/images/bracelets/classique-beige-noir.webp": {
+    "entries": [
+      {
+        "src": "/images/bracelets/responsive/classique-beige-noir-90.webp",
+        "width": 90,
+        "height": 120
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-beige-noir-180.webp",
+        "width": 180,
+        "height": 240
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-beige-noir-270.webp",
+        "width": 270,
+        "height": 360
+      }
+    ],
+    "maxDisplayWidth": 270,
+    "sourceWidth": 286,
+    "sourceHeight": 333,
+    "role": "catalogue",
+    "source": "assets/inbox/bracelets/classic-logo-repaired.png"
+  },
+  "/images/bracelets/classique-marron-noir.webp": {
+    "entries": [
+      {
+        "src": "/images/bracelets/responsive/classique-marron-noir-90.webp",
+        "width": 90,
+        "height": 120
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-marron-noir-180.webp",
+        "width": 180,
+        "height": 240
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-marron-noir-270.webp",
+        "width": 270,
+        "height": 360
+      }
+    ],
+    "maxDisplayWidth": 270,
+    "sourceWidth": 286,
+    "sourceHeight": 333,
+    "role": "catalogue",
+    "source": "assets/inbox/bracelets/classic-logo-repaired.png"
+  },
+  "/images/bracelets/classique-olive-noir.webp": {
+    "entries": [
+      {
+        "src": "/images/bracelets/responsive/classique-olive-noir-90.webp",
+        "width": 90,
+        "height": 120
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-olive-noir-180.webp",
+        "width": 180,
+        "height": 240
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-olive-noir-270.webp",
+        "width": 270,
+        "height": 360
+      }
+    ],
+    "maxDisplayWidth": 270,
+    "sourceWidth": 286,
+    "sourceHeight": 333,
+    "role": "catalogue",
+    "source": "assets/inbox/bracelets/classic-logo-repaired.png"
+  },
+  "/images/bracelets/classique-bleu-clair-noir.webp": {
+    "entries": [
+      {
+        "src": "/images/bracelets/responsive/classique-bleu-clair-noir-90.webp",
+        "width": 90,
+        "height": 120
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-bleu-clair-noir-180.webp",
+        "width": 180,
+        "height": 240
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-bleu-clair-noir-270.webp",
+        "width": 270,
+        "height": 360
+      }
+    ],
+    "maxDisplayWidth": 270,
+    "sourceWidth": 286,
+    "sourceHeight": 333,
+    "role": "catalogue",
+    "source": "assets/inbox/bracelets/classic-logo-repaired.png"
+  },
+  "/images/bracelets/classique-beige-dore.webp": {
+    "entries": [
+      {
+        "src": "/images/bracelets/responsive/classique-beige-dore-90.webp",
+        "width": 90,
+        "height": 120
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-beige-dore-180.webp",
+        "width": 180,
+        "height": 240
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-beige-dore-270.webp",
+        "width": 270,
+        "height": 360
+      }
+    ],
+    "maxDisplayWidth": 270,
+    "sourceWidth": 286,
+    "sourceHeight": 346,
+    "role": "catalogue",
+    "source": "assets/inbox/bracelets/classic-logo-repaired.png"
+  },
+  "/images/bracelets/classique-marron-dore.webp": {
+    "entries": [
+      {
+        "src": "/images/bracelets/responsive/classique-marron-dore-90.webp",
+        "width": 90,
+        "height": 120
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-marron-dore-180.webp",
+        "width": 180,
+        "height": 240
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-marron-dore-270.webp",
+        "width": 270,
+        "height": 360
+      }
+    ],
+    "maxDisplayWidth": 270,
+    "sourceWidth": 286,
+    "sourceHeight": 346,
+    "role": "catalogue",
+    "source": "assets/inbox/bracelets/classic-logo-repaired.png"
+  },
+  "/images/bracelets/classique-noir-dore.webp": {
+    "entries": [
+      {
+        "src": "/images/bracelets/responsive/classique-noir-dore-90.webp",
+        "width": 90,
+        "height": 120
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-noir-dore-180.webp",
+        "width": 180,
+        "height": 240
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-noir-dore-270.webp",
+        "width": 270,
+        "height": 360
+      }
+    ],
+    "maxDisplayWidth": 270,
+    "sourceWidth": 286,
+    "sourceHeight": 346,
+    "role": "catalogue",
+    "source": "assets/inbox/bracelets/classic-logo-repaired.png"
+  },
+  "/images/bracelets/classique-gris-dore.webp": {
+    "entries": [
+      {
+        "src": "/images/bracelets/responsive/classique-gris-dore-90.webp",
+        "width": 90,
+        "height": 120
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-gris-dore-180.webp",
+        "width": 180,
+        "height": 240
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-gris-dore-270.webp",
+        "width": 270,
+        "height": 360
+      }
+    ],
+    "maxDisplayWidth": 270,
+    "sourceWidth": 286,
+    "sourceHeight": 346,
+    "role": "catalogue",
+    "source": "assets/inbox/bracelets/classic-logo-repaired.png"
+  },
+  "/images/bracelets/classique-bordeaux-dore.webp": {
+    "entries": [
+      {
+        "src": "/images/bracelets/responsive/classique-bordeaux-dore-90.webp",
+        "width": 90,
+        "height": 120
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-bordeaux-dore-180.webp",
+        "width": 180,
+        "height": 240
+      },
+      {
+        "src": "/images/bracelets/responsive/classique-bordeaux-dore-270.webp",
+        "width": 270,
+        "height": 360
+      }
+    ],
+    "maxDisplayWidth": 270,
+    "sourceWidth": 286,
+    "sourceHeight": 346,
+    "role": "catalogue",
+    "source": "assets/inbox/bracelets/classic-logo-repaired.png"
+  },
+  "/images/bracelets/original-turquoise-horloge.webp": {
+    "entries": [
+      {
+        "src": "/images/bracelets/responsive/original-turquoise-horloge-90.webp",
+        "width": 90,
+        "height": 120
+      },
+      {
+        "src": "/images/bracelets/responsive/original-turquoise-horloge-180.webp",
+        "width": 180,
+        "height": 240
+      },
+      {
+        "src": "/images/bracelets/responsive/original-turquoise-horloge-270.webp",
+        "width": 270,
+        "height": 360
+      },
+      {
+        "src": "/images/bracelets/responsive/original-turquoise-horloge-360.webp",
+        "width": 360,
+        "height": 480
+      }
+    ],
+    "maxDisplayWidth": 270,
+    "sourceWidth": 470,
+    "sourceHeight": 503,
+    "role": "catalogue",
+    "source": "assets/inbox/bracelets/bracelets_4_modeles_originaux.png"
+  },
+  "/images/bracelets/original-marine-ours.webp": {
+    "entries": [
+      {
+        "src": "/images/bracelets/responsive/original-marine-ours-90.webp",
+        "width": 90,
+        "height": 120
+      },
+      {
+        "src": "/images/bracelets/responsive/original-marine-ours-180.webp",
+        "width": 180,
+        "height": 240
+      },
+      {
+        "src": "/images/bracelets/responsive/original-marine-ours-270.webp",
+        "width": 270,
+        "height": 360
+      },
+      {
+        "src": "/images/bracelets/responsive/original-marine-ours-360.webp",
+        "width": 360,
+        "height": 480
+      }
+    ],
+    "maxDisplayWidth": 270,
+    "sourceWidth": 470,
+    "sourceHeight": 503,
+    "role": "catalogue",
+    "source": "assets/inbox/bracelets/bracelets_4_modeles_originaux.png"
+  },
+  "/images/bracelets/original-blanc-londres.webp": {
+    "entries": [
+      {
+        "src": "/images/bracelets/responsive/original-blanc-londres-90.webp",
+        "width": 90,
+        "height": 120
+      },
+      {
+        "src": "/images/bracelets/responsive/original-blanc-londres-180.webp",
+        "width": 180,
+        "height": 240
+      },
+      {
+        "src": "/images/bracelets/responsive/original-blanc-londres-270.webp",
+        "width": 270,
+        "height": 360
+      },
+      {
+        "src": "/images/bracelets/responsive/original-blanc-londres-360.webp",
+        "width": 360,
+        "height": 480
+      }
+    ],
+    "maxDisplayWidth": 270,
+    "sourceWidth": 470,
+    "sourceHeight": 498,
+    "role": "catalogue",
+    "source": "assets/inbox/bracelets/bracelets_4_modeles_originaux.png"
+  },
+  "/images/bracelets/original-noir-faucon.webp": {
+    "entries": [
+      {
+        "src": "/images/bracelets/responsive/original-noir-faucon-90.webp",
+        "width": 90,
+        "height": 120
+      },
+      {
+        "src": "/images/bracelets/responsive/original-noir-faucon-180.webp",
+        "width": 180,
+        "height": 240
+      },
+      {
+        "src": "/images/bracelets/responsive/original-noir-faucon-270.webp",
+        "width": 270,
+        "height": 360
+      },
+      {
+        "src": "/images/bracelets/responsive/original-noir-faucon-360.webp",
+        "width": 360,
+        "height": 480
+      }
+    ],
+    "maxDisplayWidth": 270,
+    "sourceWidth": 470,
+    "sourceHeight": 498,
+    "role": "catalogue",
+    "source": "assets/inbox/bracelets/bracelets_4_modeles_originaux.png"
+  },
+  "/images/wearable/hero/black-band.webp": {
+    "entries": [
+      {
+        "src": "/images/wearable/responsive/black-band-120.webp",
+        "width": 120,
+        "height": 104
+      },
+      {
+        "src": "/images/wearable/responsive/black-band-240.webp",
+        "width": 240,
+        "height": 209
+      },
+      {
+        "src": "/images/wearable/responsive/black-band-315.webp",
+        "width": 315,
+        "height": 274
+      }
+    ],
+    "maxDisplayWidth": 315,
+    "sourceWidth": 315,
+    "sourceHeight": 274,
+    "role": "editorial",
+    "source": "publicitaires_hero_lifestyle.png"
+  },
+  "/images/wearable/collections/classic.webp": {
+    "entries": [
+      {
+        "src": "/images/wearable/responsive/classic-120.webp",
+        "width": 120,
+        "height": 78
+      },
+      {
+        "src": "/images/wearable/responsive/classic-240.webp",
+        "width": 240,
+        "height": 155
+      },
+      {
+        "src": "/images/wearable/responsive/classic-342.webp",
+        "width": 342,
+        "height": 221
+      }
+    ],
+    "maxDisplayWidth": 342,
+    "sourceWidth": 342,
+    "sourceHeight": 221,
+    "role": "editorial",
+    "source": "collections.png"
+  },
+  "/images/wearable/collections/original.webp": {
+    "entries": [
+      {
+        "src": "/images/wearable/responsive/original-120.webp",
+        "width": 120,
+        "height": 87
+      },
+      {
+        "src": "/images/wearable/responsive/original-240.webp",
+        "width": 240,
+        "height": 174
+      },
+      {
+        "src": "/images/wearable/responsive/original-304.webp",
+        "width": 304,
+        "height": 221
+      }
+    ],
+    "maxDisplayWidth": 304,
+    "sourceWidth": 304,
+    "sourceHeight": 221,
+    "role": "editorial",
+    "source": "collections.png"
+  },
+  "/images/wearable/collections/colour-composition.webp": {
+    "entries": [
+      {
+        "src": "/images/wearable/responsive/colour-composition-120.webp",
+        "width": 120,
+        "height": 89
+      },
+      {
+        "src": "/images/wearable/responsive/colour-composition-240.webp",
+        "width": 240,
+        "height": 179
+      },
+      {
+        "src": "/images/wearable/responsive/colour-composition-297.webp",
+        "width": 297,
+        "height": 221
+      }
+    ],
+    "maxDisplayWidth": 297,
+    "sourceWidth": 297,
+    "sourceHeight": 221,
+    "role": "editorial",
+    "source": "collections.png"
+  },
+  "/images/wearable/lifestyle/training.webp": {
+    "entries": [
+      {
+        "src": "/images/wearable/responsive/training-120.webp",
+        "width": 120,
+        "height": 109
+      },
+      {
+        "src": "/images/wearable/responsive/training-240.webp",
+        "width": 240,
+        "height": 218
+      },
+      {
+        "src": "/images/wearable/responsive/training-302.webp",
+        "width": 302,
+        "height": 274
+      }
+    ],
+    "maxDisplayWidth": 302,
+    "sourceWidth": 302,
+    "sourceHeight": 274,
+    "role": "editorial",
+    "source": "publicitaires_hero_lifestyle.png"
+  },
+  "/images/wearable/lifestyle/everyday.webp": {
+    "entries": [
+      {
+        "src": "/images/wearable/responsive/everyday-120.webp",
+        "width": 120,
+        "height": 109
+      },
+      {
+        "src": "/images/wearable/responsive/everyday-240.webp",
+        "width": 240,
+        "height": 218
+      },
+      {
+        "src": "/images/wearable/responsive/everyday-302.webp",
+        "width": 302,
+        "height": 274
+      }
+    ],
+    "maxDisplayWidth": 302,
+    "sourceWidth": 302,
+    "sourceHeight": 274,
+    "role": "editorial",
+    "source": "publicitaires_hero_lifestyle.png"
+  },
+  "/images/wearable/lifestyle/office.webp": {
+    "entries": [
+      {
+        "src": "/images/wearable/responsive/office-120.webp",
+        "width": 120,
+        "height": 103
+      },
+      {
+        "src": "/images/wearable/responsive/office-240.webp",
+        "width": 240,
+        "height": 207
+      },
+      {
+        "src": "/images/wearable/responsive/office-254.webp",
+        "width": 254,
+        "height": 219
+      }
+    ],
+    "maxDisplayWidth": 254,
+    "sourceWidth": 254,
+    "sourceHeight": 219,
+    "role": "editorial",
+    "source": "details_matieres.png"
+  },
+  "/images/wearable/details/textile.webp": {
+    "entries": [
+      {
+        "src": "/images/wearable/responsive/textile-120.webp",
+        "width": 120,
+        "height": 109
+      },
+      {
+        "src": "/images/wearable/responsive/textile-240.webp",
+        "width": 240,
+        "height": 217
+      },
+      {
+        "src": "/images/wearable/responsive/textile-242.webp",
+        "width": 242,
+        "height": 219
+      }
+    ],
+    "maxDisplayWidth": 242,
+    "sourceWidth": 242,
+    "sourceHeight": 219,
+    "role": "editorial",
+    "source": "details_matieres.png"
+  },
+  "/images/wearable/details/on-desk.webp": {
+    "entries": [
+      {
+        "src": "/images/wearable/responsive/on-desk-120.webp",
+        "width": 120,
+        "height": 103
+      },
+      {
+        "src": "/images/wearable/responsive/on-desk-240.webp",
+        "width": 240,
+        "height": 206
+      },
+      {
+        "src": "/images/wearable/responsive/on-desk-255.webp",
+        "width": 255,
+        "height": 219
+      }
+    ],
+    "maxDisplayWidth": 255,
+    "sourceWidth": 255,
+    "sourceHeight": 219,
+    "role": "editorial",
+    "source": "details_matieres.png"
+  },
+  "/images/wearable/products/turquoise-editorial.webp": {
+    "entries": [
+      {
+        "src": "/images/wearable/responsive/turquoise-editorial-120.webp",
+        "width": 120,
+        "height": 106
+      },
+      {
+        "src": "/images/wearable/responsive/turquoise-editorial-240.webp",
+        "width": 240,
+        "height": 213
+      },
+      {
+        "src": "/images/wearable/responsive/turquoise-editorial-247.webp",
+        "width": 247,
+        "height": 219
+      }
+    ],
+    "maxDisplayWidth": 247,
+    "sourceWidth": 247,
+    "sourceHeight": 219,
+    "role": "editorial",
+    "source": "details_matieres.png"
+  }
+}

@@ -1,0 +1,1220 @@
+{
+  "scope": "All 29 currently configured catalogue and editorial photographs; original sheets and ZIP extractions inspected separately.",
+  "sourceLimits": "Classics: 286px-wide sheet cells. Originals: 470px-wide sheet cells. Advertising: 242–342px-wide sheet cells. No HD hero found.",
+  "hero": "No low-resolution full-width image emitted. Desktop/mobile picture structure is ready in src/config/hero.ts.",
+  "photos": [
+    {
+      "original": "/images/bracelets/classique-noir-noir.webp",
+      "originalExport": {
+        "width": 360,
+        "height": 480,
+        "bytes": 24268,
+        "format": "webp"
+      },
+      "source": "assets/inbox/bracelets/classic-logo-repaired.png",
+      "sourceCrop": {
+        "width": 286,
+        "height": 345
+      },
+      "role": "catalogue",
+      "displayMaximumCssPixels": 270,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "3:4 white canvas",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "no commercial headline identified on inspected sheet",
+      "exportSettings": "WebP 96 for >=270 px, 90 for smaller files; PNG source; no content enlargement",
+      "versions": [
+        {
+          "src": "/images/bracelets/responsive/classique-noir-noir-90.webp",
+          "width": 90,
+          "height": 120,
+          "bytes": 1910
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-noir-noir-180.webp",
+          "width": 180,
+          "height": 240,
+          "bytes": 7236
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-noir-noir-270.webp",
+          "width": 270,
+          "height": 360,
+          "bytes": 22770
+        }
+      ]
+    },
+    {
+      "original": "/images/bracelets/classique-marine-noir.webp",
+      "originalExport": {
+        "width": 360,
+        "height": 480,
+        "bytes": 28040,
+        "format": "webp"
+      },
+      "source": "assets/inbox/bracelets/classic-logo-repaired.png",
+      "sourceCrop": {
+        "width": 286,
+        "height": 345
+      },
+      "role": "catalogue",
+      "displayMaximumCssPixels": 270,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "3:4 white canvas",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "no commercial headline identified on inspected sheet",
+      "exportSettings": "WebP 96 for >=270 px, 90 for smaller files; PNG source; no content enlargement",
+      "versions": [
+        {
+          "src": "/images/bracelets/responsive/classique-marine-noir-90.webp",
+          "width": 90,
+          "height": 120,
+          "bytes": 2220
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-marine-noir-180.webp",
+          "width": 180,
+          "height": 240,
+          "bytes": 8260
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-marine-noir-270.webp",
+          "width": 270,
+          "height": 360,
+          "bytes": 27318
+        }
+      ]
+    },
+    {
+      "original": "/images/bracelets/classique-bordeaux-noir.webp",
+      "originalExport": {
+        "width": 360,
+        "height": 480,
+        "bytes": 30134,
+        "format": "webp"
+      },
+      "source": "assets/inbox/bracelets/classic-logo-repaired.png",
+      "sourceCrop": {
+        "width": 286,
+        "height": 345
+      },
+      "role": "catalogue",
+      "displayMaximumCssPixels": 270,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "3:4 white canvas",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "no commercial headline identified on inspected sheet",
+      "exportSettings": "WebP 96 for >=270 px, 90 for smaller files; PNG source; no content enlargement",
+      "versions": [
+        {
+          "src": "/images/bracelets/responsive/classique-bordeaux-noir-90.webp",
+          "width": 90,
+          "height": 120,
+          "bytes": 2464
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-bordeaux-noir-180.webp",
+          "width": 180,
+          "height": 240,
+          "bytes": 8928
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-bordeaux-noir-270.webp",
+          "width": 270,
+          "height": 360,
+          "bytes": 27584
+        }
+      ]
+    },
+    {
+      "original": "/images/bracelets/classique-orange-noir.webp",
+      "originalExport": {
+        "width": 360,
+        "height": 480,
+        "bytes": 30146,
+        "format": "webp"
+      },
+      "source": "assets/inbox/bracelets/classic-logo-repaired.png",
+      "sourceCrop": {
+        "width": 286,
+        "height": 345
+      },
+      "role": "catalogue",
+      "displayMaximumCssPixels": 270,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "3:4 white canvas",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "no commercial headline identified on inspected sheet",
+      "exportSettings": "WebP 96 for >=270 px, 90 for smaller files; PNG source; no content enlargement",
+      "versions": [
+        {
+          "src": "/images/bracelets/responsive/classique-orange-noir-90.webp",
+          "width": 90,
+          "height": 120,
+          "bytes": 2908
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-orange-noir-180.webp",
+          "width": 180,
+          "height": 240,
+          "bytes": 9432
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-orange-noir-270.webp",
+          "width": 270,
+          "height": 360,
+          "bytes": 27912
+        }
+      ]
+    },
+    {
+      "original": "/images/bracelets/classique-turquoise-noir.webp",
+      "originalExport": {
+        "width": 360,
+        "height": 480,
+        "bytes": 33708,
+        "format": "webp"
+      },
+      "source": "assets/inbox/bracelets/classic-logo-repaired.png",
+      "sourceCrop": {
+        "width": 286,
+        "height": 345
+      },
+      "role": "catalogue",
+      "displayMaximumCssPixels": 270,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "3:4 white canvas",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "decorative motif lettering preserved",
+      "exportSettings": "WebP 96 for >=270 px, 90 for smaller files; PNG source; no content enlargement",
+      "versions": [
+        {
+          "src": "/images/bracelets/responsive/classique-turquoise-noir-90.webp",
+          "width": 90,
+          "height": 120,
+          "bytes": 2740
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-turquoise-noir-180.webp",
+          "width": 180,
+          "height": 240,
+          "bytes": 9812
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-turquoise-noir-270.webp",
+          "width": 270,
+          "height": 360,
+          "bytes": 29398
+        }
+      ]
+    },
+    {
+      "original": "/images/bracelets/classique-gris-noir.webp",
+      "originalExport": {
+        "width": 360,
+        "height": 480,
+        "bytes": 27436,
+        "format": "webp"
+      },
+      "source": "assets/inbox/bracelets/classic-logo-repaired.png",
+      "sourceCrop": {
+        "width": 286,
+        "height": 333
+      },
+      "role": "catalogue",
+      "displayMaximumCssPixels": 270,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "3:4 white canvas",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "no commercial headline identified on inspected sheet",
+      "exportSettings": "WebP 96 for >=270 px, 90 for smaller files; PNG source; no content enlargement",
+      "versions": [
+        {
+          "src": "/images/bracelets/responsive/classique-gris-noir-90.webp",
+          "width": 90,
+          "height": 120,
+          "bytes": 1990
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-gris-noir-180.webp",
+          "width": 180,
+          "height": 240,
+          "bytes": 7592
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-gris-noir-270.webp",
+          "width": 270,
+          "height": 360,
+          "bytes": 24530
+        }
+      ]
+    },
+    {
+      "original": "/images/bracelets/classique-beige-noir.webp",
+      "originalExport": {
+        "width": 360,
+        "height": 480,
+        "bytes": 26512,
+        "format": "webp"
+      },
+      "source": "assets/inbox/bracelets/classic-logo-repaired.png",
+      "sourceCrop": {
+        "width": 286,
+        "height": 333
+      },
+      "role": "catalogue",
+      "displayMaximumCssPixels": 270,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "3:4 white canvas",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "no commercial headline identified on inspected sheet",
+      "exportSettings": "WebP 96 for >=270 px, 90 for smaller files; PNG source; no content enlargement",
+      "versions": [
+        {
+          "src": "/images/bracelets/responsive/classique-beige-noir-90.webp",
+          "width": 90,
+          "height": 120,
+          "bytes": 2212
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-beige-noir-180.webp",
+          "width": 180,
+          "height": 240,
+          "bytes": 7720
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-beige-noir-270.webp",
+          "width": 270,
+          "height": 360,
+          "bytes": 26192
+        }
+      ]
+    },
+    {
+      "original": "/images/bracelets/classique-marron-noir.webp",
+      "originalExport": {
+        "width": 360,
+        "height": 480,
+        "bytes": 31404,
+        "format": "webp"
+      },
+      "source": "assets/inbox/bracelets/classic-logo-repaired.png",
+      "sourceCrop": {
+        "width": 286,
+        "height": 333
+      },
+      "role": "catalogue",
+      "displayMaximumCssPixels": 270,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "3:4 white canvas",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "no commercial headline identified on inspected sheet",
+      "exportSettings": "WebP 96 for >=270 px, 90 for smaller files; PNG source; no content enlargement",
+      "versions": [
+        {
+          "src": "/images/bracelets/responsive/classique-marron-noir-90.webp",
+          "width": 90,
+          "height": 120,
+          "bytes": 2500
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-marron-noir-180.webp",
+          "width": 180,
+          "height": 240,
+          "bytes": 8962
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-marron-noir-270.webp",
+          "width": 270,
+          "height": 360,
+          "bytes": 28908
+        }
+      ]
+    },
+    {
+      "original": "/images/bracelets/classique-olive-noir.webp",
+      "originalExport": {
+        "width": 360,
+        "height": 480,
+        "bytes": 31488,
+        "format": "webp"
+      },
+      "source": "assets/inbox/bracelets/classic-logo-repaired.png",
+      "sourceCrop": {
+        "width": 286,
+        "height": 333
+      },
+      "role": "catalogue",
+      "displayMaximumCssPixels": 270,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "3:4 white canvas",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "no commercial headline identified on inspected sheet",
+      "exportSettings": "WebP 96 for >=270 px, 90 for smaller files; PNG source; no content enlargement",
+      "versions": [
+        {
+          "src": "/images/bracelets/responsive/classique-olive-noir-90.webp",
+          "width": 90,
+          "height": 120,
+          "bytes": 2460
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-olive-noir-180.webp",
+          "width": 180,
+          "height": 240,
+          "bytes": 8850
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-olive-noir-270.webp",
+          "width": 270,
+          "height": 360,
+          "bytes": 28476
+        }
+      ]
+    },
+    {
+      "original": "/images/bracelets/classique-bleu-clair-noir.webp",
+      "originalExport": {
+        "width": 360,
+        "height": 480,
+        "bytes": 33108,
+        "format": "webp"
+      },
+      "source": "assets/inbox/bracelets/classic-logo-repaired.png",
+      "sourceCrop": {
+        "width": 286,
+        "height": 333
+      },
+      "role": "catalogue",
+      "displayMaximumCssPixels": 270,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "3:4 white canvas",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "no commercial headline identified on inspected sheet",
+      "exportSettings": "WebP 96 for >=270 px, 90 for smaller files; PNG source; no content enlargement",
+      "versions": [
+        {
+          "src": "/images/bracelets/responsive/classique-bleu-clair-noir-90.webp",
+          "width": 90,
+          "height": 120,
+          "bytes": 2842
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-bleu-clair-noir-180.webp",
+          "width": 180,
+          "height": 240,
+          "bytes": 9604
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-bleu-clair-noir-270.webp",
+          "width": 270,
+          "height": 360,
+          "bytes": 29700
+        }
+      ]
+    },
+    {
+      "original": "/images/bracelets/classique-beige-dore.webp",
+      "originalExport": {
+        "width": 360,
+        "height": 480,
+        "bytes": 27682,
+        "format": "webp"
+      },
+      "source": "assets/inbox/bracelets/classic-logo-repaired.png",
+      "sourceCrop": {
+        "width": 286,
+        "height": 346
+      },
+      "role": "catalogue",
+      "displayMaximumCssPixels": 270,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "3:4 white canvas",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "no commercial headline identified on inspected sheet",
+      "exportSettings": "WebP 96 for >=270 px, 90 for smaller files; PNG source; no content enlargement",
+      "versions": [
+        {
+          "src": "/images/bracelets/responsive/classique-beige-dore-90.webp",
+          "width": 90,
+          "height": 120,
+          "bytes": 2232
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-beige-dore-180.webp",
+          "width": 180,
+          "height": 240,
+          "bytes": 8078
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-beige-dore-270.webp",
+          "width": 270,
+          "height": 360,
+          "bytes": 27144
+        }
+      ]
+    },
+    {
+      "original": "/images/bracelets/classique-marron-dore.webp",
+      "originalExport": {
+        "width": 360,
+        "height": 480,
+        "bytes": 33528,
+        "format": "webp"
+      },
+      "source": "assets/inbox/bracelets/classic-logo-repaired.png",
+      "sourceCrop": {
+        "width": 286,
+        "height": 346
+      },
+      "role": "catalogue",
+      "displayMaximumCssPixels": 270,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "3:4 white canvas",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "no commercial headline identified on inspected sheet",
+      "exportSettings": "WebP 96 for >=270 px, 90 for smaller files; PNG source; no content enlargement",
+      "versions": [
+        {
+          "src": "/images/bracelets/responsive/classique-marron-dore-90.webp",
+          "width": 90,
+          "height": 120,
+          "bytes": 2660
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-marron-dore-180.webp",
+          "width": 180,
+          "height": 240,
+          "bytes": 9496
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-marron-dore-270.webp",
+          "width": 270,
+          "height": 360,
+          "bytes": 30138
+        }
+      ]
+    },
+    {
+      "original": "/images/bracelets/classique-noir-dore.webp",
+      "originalExport": {
+        "width": 360,
+        "height": 480,
+        "bytes": 24416,
+        "format": "webp"
+      },
+      "source": "assets/inbox/bracelets/classic-logo-repaired.png",
+      "sourceCrop": {
+        "width": 286,
+        "height": 346
+      },
+      "role": "catalogue",
+      "displayMaximumCssPixels": 270,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "3:4 white canvas",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "no commercial headline identified on inspected sheet",
+      "exportSettings": "WebP 96 for >=270 px, 90 for smaller files; PNG source; no content enlargement",
+      "versions": [
+        {
+          "src": "/images/bracelets/responsive/classique-noir-dore-90.webp",
+          "width": 90,
+          "height": 120,
+          "bytes": 2174
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-noir-dore-180.webp",
+          "width": 180,
+          "height": 240,
+          "bytes": 7426
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-noir-dore-270.webp",
+          "width": 270,
+          "height": 360,
+          "bytes": 23654
+        }
+      ]
+    },
+    {
+      "original": "/images/bracelets/classique-gris-dore.webp",
+      "originalExport": {
+        "width": 360,
+        "height": 480,
+        "bytes": 29504,
+        "format": "webp"
+      },
+      "source": "assets/inbox/bracelets/classic-logo-repaired.png",
+      "sourceCrop": {
+        "width": 286,
+        "height": 346
+      },
+      "role": "catalogue",
+      "displayMaximumCssPixels": 270,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "3:4 white canvas",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "no commercial headline identified on inspected sheet",
+      "exportSettings": "WebP 96 for >=270 px, 90 for smaller files; PNG source; no content enlargement",
+      "versions": [
+        {
+          "src": "/images/bracelets/responsive/classique-gris-dore-90.webp",
+          "width": 90,
+          "height": 120,
+          "bytes": 2298
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-gris-dore-180.webp",
+          "width": 180,
+          "height": 240,
+          "bytes": 8440
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-gris-dore-270.webp",
+          "width": 270,
+          "height": 360,
+          "bytes": 26624
+        }
+      ]
+    },
+    {
+      "original": "/images/bracelets/classique-bordeaux-dore.webp",
+      "originalExport": {
+        "width": 360,
+        "height": 480,
+        "bytes": 30558,
+        "format": "webp"
+      },
+      "source": "assets/inbox/bracelets/classic-logo-repaired.png",
+      "sourceCrop": {
+        "width": 286,
+        "height": 346
+      },
+      "role": "catalogue",
+      "displayMaximumCssPixels": 270,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "3:4 white canvas",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "no commercial headline identified on inspected sheet",
+      "exportSettings": "WebP 96 for >=270 px, 90 for smaller files; PNG source; no content enlargement",
+      "versions": [
+        {
+          "src": "/images/bracelets/responsive/classique-bordeaux-dore-90.webp",
+          "width": 90,
+          "height": 120,
+          "bytes": 2588
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-bordeaux-dore-180.webp",
+          "width": 180,
+          "height": 240,
+          "bytes": 8998
+        },
+        {
+          "src": "/images/bracelets/responsive/classique-bordeaux-dore-270.webp",
+          "width": 270,
+          "height": 360,
+          "bytes": 27800
+        }
+      ]
+    },
+    {
+      "original": "/images/bracelets/original-turquoise-horloge.webp",
+      "originalExport": {
+        "width": 360,
+        "height": 480,
+        "bytes": 30422,
+        "format": "webp"
+      },
+      "source": "assets/inbox/bracelets/bracelets_4_modeles_originaux.png",
+      "sourceCrop": {
+        "width": 470,
+        "height": 503
+      },
+      "role": "catalogue",
+      "displayMaximumCssPixels": 270,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "3:4 white canvas",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "decorative motif lettering preserved",
+      "exportSettings": "WebP 96 for >=270 px, 90 for smaller files; PNG source; no content enlargement",
+      "versions": [
+        {
+          "src": "/images/bracelets/responsive/original-turquoise-horloge-90.webp",
+          "width": 90,
+          "height": 120,
+          "bytes": 2874
+        },
+        {
+          "src": "/images/bracelets/responsive/original-turquoise-horloge-180.webp",
+          "width": 180,
+          "height": 240,
+          "bytes": 8860
+        },
+        {
+          "src": "/images/bracelets/responsive/original-turquoise-horloge-270.webp",
+          "width": 270,
+          "height": 360,
+          "bytes": 25760
+        },
+        {
+          "src": "/images/bracelets/responsive/original-turquoise-horloge-360.webp",
+          "width": 360,
+          "height": 480,
+          "bytes": 43116
+        }
+      ]
+    },
+    {
+      "original": "/images/bracelets/original-marine-ours.webp",
+      "originalExport": {
+        "width": 360,
+        "height": 480,
+        "bytes": 31556,
+        "format": "webp"
+      },
+      "source": "assets/inbox/bracelets/bracelets_4_modeles_originaux.png",
+      "sourceCrop": {
+        "width": 470,
+        "height": 503
+      },
+      "role": "catalogue",
+      "displayMaximumCssPixels": 270,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "3:4 white canvas",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "decorative motif lettering preserved",
+      "exportSettings": "WebP 96 for >=270 px, 90 for smaller files; PNG source; no content enlargement",
+      "versions": [
+        {
+          "src": "/images/bracelets/responsive/original-marine-ours-90.webp",
+          "width": 90,
+          "height": 120,
+          "bytes": 2812
+        },
+        {
+          "src": "/images/bracelets/responsive/original-marine-ours-180.webp",
+          "width": 180,
+          "height": 240,
+          "bytes": 8490
+        },
+        {
+          "src": "/images/bracelets/responsive/original-marine-ours-270.webp",
+          "width": 270,
+          "height": 360,
+          "bytes": 26498
+        },
+        {
+          "src": "/images/bracelets/responsive/original-marine-ours-360.webp",
+          "width": 360,
+          "height": 480,
+          "bytes": 45434
+        }
+      ]
+    },
+    {
+      "original": "/images/bracelets/original-blanc-londres.webp",
+      "originalExport": {
+        "width": 360,
+        "height": 480,
+        "bytes": 21672,
+        "format": "webp"
+      },
+      "source": "assets/inbox/bracelets/bracelets_4_modeles_originaux.png",
+      "sourceCrop": {
+        "width": 470,
+        "height": 498
+      },
+      "role": "catalogue",
+      "displayMaximumCssPixels": 270,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "3:4 white canvas",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "decorative motif lettering preserved",
+      "exportSettings": "WebP 96 for >=270 px, 90 for smaller files; PNG source; no content enlargement",
+      "versions": [
+        {
+          "src": "/images/bracelets/responsive/original-blanc-londres-90.webp",
+          "width": 90,
+          "height": 120,
+          "bytes": 2254
+        },
+        {
+          "src": "/images/bracelets/responsive/original-blanc-londres-180.webp",
+          "width": 180,
+          "height": 240,
+          "bytes": 6446
+        },
+        {
+          "src": "/images/bracelets/responsive/original-blanc-londres-270.webp",
+          "width": 270,
+          "height": 360,
+          "bytes": 19804
+        },
+        {
+          "src": "/images/bracelets/responsive/original-blanc-londres-360.webp",
+          "width": 360,
+          "height": 480,
+          "bytes": 32604
+        }
+      ]
+    },
+    {
+      "original": "/images/bracelets/original-noir-faucon.webp",
+      "originalExport": {
+        "width": 360,
+        "height": 480,
+        "bytes": 27580,
+        "format": "webp"
+      },
+      "source": "assets/inbox/bracelets/bracelets_4_modeles_originaux.png",
+      "sourceCrop": {
+        "width": 470,
+        "height": 498
+      },
+      "role": "catalogue",
+      "displayMaximumCssPixels": 270,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "3:4 white canvas",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "decorative motif lettering preserved",
+      "exportSettings": "WebP 96 for >=270 px, 90 for smaller files; PNG source; no content enlargement",
+      "versions": [
+        {
+          "src": "/images/bracelets/responsive/original-noir-faucon-90.webp",
+          "width": 90,
+          "height": 120,
+          "bytes": 2244
+        },
+        {
+          "src": "/images/bracelets/responsive/original-noir-faucon-180.webp",
+          "width": 180,
+          "height": 240,
+          "bytes": 7282
+        },
+        {
+          "src": "/images/bracelets/responsive/original-noir-faucon-270.webp",
+          "width": 270,
+          "height": 360,
+          "bytes": 22068
+        },
+        {
+          "src": "/images/bracelets/responsive/original-noir-faucon-360.webp",
+          "width": 360,
+          "height": 480,
+          "bytes": 38490
+        }
+      ]
+    },
+    {
+      "original": "/images/wearable/hero/black-band.webp",
+      "originalExport": {
+        "width": 315,
+        "height": 274,
+        "bytes": 13820,
+        "format": "webp"
+      },
+      "source": "publicitaires_hero_lifestyle.png",
+      "sourceCrop": {
+        "width": 315,
+        "height": 274
+      },
+      "role": "retired-small-hero",
+      "displayMaximumCssPixels": 0,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "315:274",
+      "retinaAtMaximum": "not displayed",
+      "embeddedText": "no commercial headline identified on inspected sheet",
+      "exportSettings": "WebP 94; direct PNG crop; no enlargement",
+      "versions": [
+        {
+          "src": "/images/wearable/responsive/black-band-120.webp",
+          "width": 120,
+          "height": 104,
+          "bytes": 3478
+        },
+        {
+          "src": "/images/wearable/responsive/black-band-240.webp",
+          "width": 240,
+          "height": 209,
+          "bytes": 10926
+        },
+        {
+          "src": "/images/wearable/responsive/black-band-315.webp",
+          "width": 315,
+          "height": 274,
+          "bytes": 16934
+        }
+      ]
+    },
+    {
+      "original": "/images/wearable/collections/classic.webp",
+      "originalExport": {
+        "width": 342,
+        "height": 221,
+        "bytes": 13930,
+        "format": "webp"
+      },
+      "source": "collections.png",
+      "sourceCrop": {
+        "width": 342,
+        "height": 221
+      },
+      "role": "editorial",
+      "displayMaximumCssPixels": 342,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "342:221",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "no commercial headline identified on inspected sheet",
+      "exportSettings": "WebP 94; direct PNG crop; no enlargement",
+      "versions": [
+        {
+          "src": "/images/wearable/responsive/classic-120.webp",
+          "width": 120,
+          "height": 78,
+          "bytes": 2576
+        },
+        {
+          "src": "/images/wearable/responsive/classic-240.webp",
+          "width": 240,
+          "height": 155,
+          "bytes": 8256
+        },
+        {
+          "src": "/images/wearable/responsive/classic-342.webp",
+          "width": 342,
+          "height": 221,
+          "bytes": 16636
+        }
+      ]
+    },
+    {
+      "original": "/images/wearable/collections/original.webp",
+      "originalExport": {
+        "width": 304,
+        "height": 221,
+        "bytes": 17740,
+        "format": "webp"
+      },
+      "source": "collections.png",
+      "sourceCrop": {
+        "width": 304,
+        "height": 221
+      },
+      "role": "editorial",
+      "displayMaximumCssPixels": 304,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "304:221",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "decorative motif lettering preserved",
+      "exportSettings": "WebP 94; direct PNG crop; no enlargement",
+      "versions": [
+        {
+          "src": "/images/wearable/responsive/original-120.webp",
+          "width": 120,
+          "height": 87,
+          "bytes": 4536
+        },
+        {
+          "src": "/images/wearable/responsive/original-240.webp",
+          "width": 240,
+          "height": 174,
+          "bytes": 14194
+        },
+        {
+          "src": "/images/wearable/responsive/original-304.webp",
+          "width": 304,
+          "height": 221,
+          "bytes": 21798
+        }
+      ]
+    },
+    {
+      "original": "/images/wearable/collections/colour-composition.webp",
+      "originalExport": {
+        "width": 297,
+        "height": 221,
+        "bytes": 11130,
+        "format": "webp"
+      },
+      "source": "collections.png",
+      "sourceCrop": {
+        "width": 297,
+        "height": 221
+      },
+      "role": "editorial",
+      "displayMaximumCssPixels": 297,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "297:221",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "no commercial headline identified on inspected sheet",
+      "exportSettings": "WebP 94; direct PNG crop; no enlargement",
+      "versions": [
+        {
+          "src": "/images/wearable/responsive/colour-composition-120.webp",
+          "width": 120,
+          "height": 89,
+          "bytes": 3282
+        },
+        {
+          "src": "/images/wearable/responsive/colour-composition-240.webp",
+          "width": 240,
+          "height": 179,
+          "bytes": 9576
+        },
+        {
+          "src": "/images/wearable/responsive/colour-composition-297.webp",
+          "width": 297,
+          "height": 221,
+          "bytes": 13954
+        }
+      ]
+    },
+    {
+      "original": "/images/wearable/lifestyle/training.webp",
+      "originalExport": {
+        "width": 302,
+        "height": 274,
+        "bytes": 12952,
+        "format": "webp"
+      },
+      "source": "publicitaires_hero_lifestyle.png",
+      "sourceCrop": {
+        "width": 302,
+        "height": 274
+      },
+      "role": "editorial",
+      "displayMaximumCssPixels": 302,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "302:274",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "no commercial headline identified on inspected sheet",
+      "exportSettings": "WebP 94; direct PNG crop; no enlargement",
+      "versions": [
+        {
+          "src": "/images/wearable/responsive/training-120.webp",
+          "width": 120,
+          "height": 109,
+          "bytes": 4456
+        },
+        {
+          "src": "/images/wearable/responsive/training-240.webp",
+          "width": 240,
+          "height": 218,
+          "bytes": 11756
+        },
+        {
+          "src": "/images/wearable/responsive/training-302.webp",
+          "width": 302,
+          "height": 274,
+          "bytes": 16182
+        }
+      ]
+    },
+    {
+      "original": "/images/wearable/lifestyle/everyday.webp",
+      "originalExport": {
+        "width": 302,
+        "height": 274,
+        "bytes": 11208,
+        "format": "webp"
+      },
+      "source": "publicitaires_hero_lifestyle.png",
+      "sourceCrop": {
+        "width": 302,
+        "height": 274
+      },
+      "role": "editorial",
+      "displayMaximumCssPixels": 302,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "302:274",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "no commercial headline identified on inspected sheet",
+      "exportSettings": "WebP 94; direct PNG crop; no enlargement",
+      "versions": [
+        {
+          "src": "/images/wearable/responsive/everyday-120.webp",
+          "width": 120,
+          "height": 109,
+          "bytes": 4268
+        },
+        {
+          "src": "/images/wearable/responsive/everyday-240.webp",
+          "width": 240,
+          "height": 218,
+          "bytes": 10184
+        },
+        {
+          "src": "/images/wearable/responsive/everyday-302.webp",
+          "width": 302,
+          "height": 274,
+          "bytes": 14556
+        }
+      ]
+    },
+    {
+      "original": "/images/wearable/lifestyle/office.webp",
+      "originalExport": {
+        "width": 254,
+        "height": 219,
+        "bytes": 7712,
+        "format": "webp"
+      },
+      "source": "details_matieres.png",
+      "sourceCrop": {
+        "width": 254,
+        "height": 219
+      },
+      "role": "editorial",
+      "displayMaximumCssPixels": 254,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "254:219",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "no commercial headline identified on inspected sheet",
+      "exportSettings": "WebP 94; direct PNG crop; no enlargement",
+      "versions": [
+        {
+          "src": "/images/wearable/responsive/office-120.webp",
+          "width": 120,
+          "height": 103,
+          "bytes": 3332
+        },
+        {
+          "src": "/images/wearable/responsive/office-240.webp",
+          "width": 240,
+          "height": 207,
+          "bytes": 8796
+        },
+        {
+          "src": "/images/wearable/responsive/office-254.webp",
+          "width": 254,
+          "height": 219,
+          "bytes": 10482
+        }
+      ]
+    },
+    {
+      "original": "/images/wearable/details/textile.webp",
+      "originalExport": {
+        "width": 242,
+        "height": 219,
+        "bytes": 19644,
+        "format": "webp"
+      },
+      "source": "details_matieres.png",
+      "sourceCrop": {
+        "width": 242,
+        "height": 219
+      },
+      "role": "editorial",
+      "displayMaximumCssPixels": 242,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "242:219",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "no commercial headline identified on inspected sheet",
+      "exportSettings": "WebP 94; direct PNG crop; no enlargement",
+      "versions": [
+        {
+          "src": "/images/wearable/responsive/textile-120.webp",
+          "width": 120,
+          "height": 109,
+          "bytes": 6738
+        },
+        {
+          "src": "/images/wearable/responsive/textile-240.webp",
+          "width": 240,
+          "height": 217,
+          "bytes": 23042
+        },
+        {
+          "src": "/images/wearable/responsive/textile-242.webp",
+          "width": 242,
+          "height": 219,
+          "bytes": 23920
+        }
+      ]
+    },
+    {
+      "original": "/images/wearable/details/on-desk.webp",
+      "originalExport": {
+        "width": 255,
+        "height": 219,
+        "bytes": 8768,
+        "format": "webp"
+      },
+      "source": "details_matieres.png",
+      "sourceCrop": {
+        "width": 255,
+        "height": 219
+      },
+      "role": "editorial",
+      "displayMaximumCssPixels": 160,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "255:219",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "no commercial headline identified on inspected sheet",
+      "exportSettings": "WebP 94; direct PNG crop; no enlargement",
+      "versions": [
+        {
+          "src": "/images/wearable/responsive/on-desk-120.webp",
+          "width": 120,
+          "height": 103,
+          "bytes": 3196
+        },
+        {
+          "src": "/images/wearable/responsive/on-desk-240.webp",
+          "width": 240,
+          "height": 206,
+          "bytes": 9536
+        },
+        {
+          "src": "/images/wearable/responsive/on-desk-255.webp",
+          "width": 255,
+          "height": 219,
+          "bytes": 10782
+        }
+      ]
+    },
+    {
+      "original": "/images/wearable/products/turquoise-editorial.webp",
+      "originalExport": {
+        "width": 247,
+        "height": 219,
+        "bytes": 13616,
+        "format": "webp"
+      },
+      "source": "details_matieres.png",
+      "sourceCrop": {
+        "width": 247,
+        "height": 219
+      },
+      "role": "editorial",
+      "displayMaximumCssPixels": 160,
+      "displayMeasurement": "CSS limit, not a browser measurement",
+      "renderedAspectRatio": "247:219",
+      "retinaAtMaximum": "higher-resolution source still needed",
+      "embeddedText": "decorative motif lettering preserved",
+      "exportSettings": "WebP 94; direct PNG crop; no enlargement",
+      "versions": [
+        {
+          "src": "/images/wearable/responsive/turquoise-editorial-120.webp",
+          "width": 120,
+          "height": 106,
+          "bytes": 5424
+        },
+        {
+          "src": "/images/wearable/responsive/turquoise-editorial-240.webp",
+          "width": 240,
+          "height": 213,
+          "bytes": 16180
+        },
+        {
+          "src": "/images/wearable/responsive/turquoise-editorial-247.webp",
+          "width": 247,
+          "height": 219,
+          "bytes": 16964
+        }
+      ]
+    }
+  ]
+}

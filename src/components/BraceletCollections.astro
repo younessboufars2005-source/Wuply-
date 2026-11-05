@@ -7,6 +7,7 @@ import { site } from '../config/site';
 import { money } from '../utils/pricing';
 import { product } from '../data/catalog';
 import { translations } from '../i18n';
+import ResponsivePhoto from './ResponsivePhoto.astro';
 interface Props {lang:Locale; featured?:boolean}
 const {lang,featured=false} = Astro.props;
 const t = braceletMessages[lang];
@@ -15,7 +16,7 @@ const collections = featured ? [{...straps[0],variants:[straps[0].variants[0],st
 {collections.map(collection => <div class="bracelet-collection" id={featured ? undefined : collection.id}>{!featured && <div class="catalog-collection-heading"><h2>{collection.name[lang]}</h2><span>{String(collection.variants.length).padStart(2,'0')} / {storefront[lang].colors}</span></div>}<div class="bracelet-grid">{collection.variants.map(variant => {
 const href=`/${lang}/product/?strap=${encodeURIComponent(variant.id)}#configuration`;
 return <article class="bracelet-card">
- <a href={href} class="bracelet-card-media" tabindex="-1" aria-hidden="true">{variant.image && <img src={variant.image.src} alt={variant.image.alt[lang]} width={variant.image.width} height={variant.image.height} loading="lazy" decoding="async"/>}</a>
+ <a href={href} class="bracelet-card-media" tabindex="-1" aria-hidden="true">{variant.image && <ResponsivePhoto image={variant.image} alt={variant.image.alt[lang]} sizes="(max-width: 760px) calc((100vw - 56px) / 2), (max-width: 1100px) calc((100vw - 160px) / 3), 270px"/>}</a>
  <div class="bracelet-card-info"><h3><a href={href}>{variant.name[lang]}</a></h3><p>{variant.description?.[lang]}</p>{site.showPrices && variant.price?.validated && <strong>{money(variant.price.amount,lang)}</strong>}<div class="card-actions"><a class="text-link" href={href}>{t.details} ↗</a><button type="button" class="quick-add" disabled={variant.availability !== 'available' && !variant.demoSelectable} data-product={product.id} data-variant={variant.id} data-success={translations[lang].added} data-error={translations[lang].storageError} aria-label={`${t.add} — ${variant.name[lang]}`} title={t.add}>+</button></div><span class="quick-add-status" role="status" aria-live="polite"></span></div>
 </article>;
 })}</div></div>)}

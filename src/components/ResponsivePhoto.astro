@@ -1,0 +1,14 @@
+---
+import {photoProps} from '../utils/images';
+interface Props {
+ image:{src:string;width:number;height:number};
+ alt:string;
+ class?:string;
+ displayWidth?:number;
+ priority?:boolean;
+ sizes?:string;
+}
+const {image,alt,class:className,displayWidth,priority=false,sizes}=Astro.props;
+const props=photoProps(image,displayWidth);
+---
+<img class:list={['native-photo',className]} src={props.src} srcset={props.srcSet} sizes={sizes||props.sizes} width={props.width} height={props.height} alt={alt} style={props.style} loading={priority?'eager':'lazy'} fetchpriority={priority?'high':undefined} decoding={priority?'auto':'async'}/>

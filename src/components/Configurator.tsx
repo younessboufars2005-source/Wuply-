@@ -7,6 +7,7 @@ import { useCart } from '../utils/useCart';
 import { addItem } from '../utils/cart.mjs';
 import { configurationPrice, money, variants } from '../utils/pricing';
 import type { Configuration, Locale } from '../types/catalog';
+import {photoProps} from '../utils/images';
 
 export default function Configurator({lang}: {lang: Locale}) {
  const t = translations[lang];
@@ -45,7 +46,7 @@ export default function Configurator({lang}: {lang: Locale}) {
 
  return <div className="configurator premium-configurator" id="configuration">
   <div className="config-gallery">
-   {selected?.image && <figure><img className="variant-preview" src={selected.image.src} alt={selected.image.alt[lang]} width={selected.image.width} height={selected.image.height} fetchPriority="high"/><figcaption>{s.real}</figcaption></figure>}
+   {selected?.image && <figure><img className="variant-preview native-photo" {...photoProps(selected.image)} alt={selected.image.alt[lang]} loading="eager" fetchPriority="high"/><figcaption>{s.real}</figcaption></figure>}
    <div className="gallery-note"><span>01 / {String(available.length).padStart(2,'0')}</span><span>{s.colors}</span></div>
   </div>
   <div className="config-panel">
@@ -58,7 +59,7 @@ export default function Configurator({lang}: {lang: Locale}) {
      <summary>{strap.name[lang]}<span>{String(strap.variants.length).padStart(2,'0')} +</span></summary>
      <div className="bracelet-options">{strap.variants.filter(v => v.availability === 'available' || v.demoSelectable).map(v =>
       <label key={v.id} className="bracelet-option"><input type="radio" name="strap" value={v.id} checked={strapId === v.id} onChange={() => choose(v.id)}/>
-       {v.image && <img src={v.image.src} alt="" width={v.image.width} height={v.image.height} loading="lazy"/>}<span>{v.name[lang]}</span>
+       {v.image && <img className="native-photo" {...photoProps(v.image,72)} alt="" loading="lazy"/>}<span>{v.name[lang]}</span>
       </label>)}</div>
     </details>)}
    </fieldset> : <p className="muted">{t.noVariants}</p>}

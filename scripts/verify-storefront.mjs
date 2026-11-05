@@ -5,6 +5,7 @@ import assert from 'node:assert/strict';
 import sharp from 'sharp';
 const root = path.resolve('dist');
 const catalog = JSON.parse(await fs.readFile('src/data/catalog.json','utf8'));
+const renditions = JSON.parse(await fs.readFile('src/data/image-renditions.json','utf8'));
 let pages=0, links=0, images=0;
 for (const lang of ['fr','en','ar']) {
  for (const route of ['', 'catalog/', 'product/', 'cart/', 'checkout/']) {
@@ -15,10 +16,18 @@ for (const lang of ['fr','en','ar']) {
   if(lang==='ar') assert.ok(html.includes('dir="rtl"'));
   if(route==='catalog/') {
    assert.equal((html.match(/class="bracelet-card"/g)||[]).length,19);
-   for(const v of catalog.straps.flatMap(s=>s.variants)) assert.ok(html.includes(v.image.src));
+   for(const v of catalog.straps.flatMap(s=>s.variants)) {
+    const entries=renditions[v.image.src]?.entries;
+    assert.ok(html.includes(entries?.[entries.length-1].src || v.image.src));
+   }
   }
   if(route==='product/') assert.equal((html.match(/name="strap"/g)||[]).length,19);
-  if(!route) assert.ok(!html.includes('<astro-island'),'Homepage remains static');
+  if(!route) {
+   assert.ok(!html.includes('<astro-island'),'Homepage remains static');
+   assert.ok(html.includes('immersive-hero'),'Full-width hero structure');
+   assert.ok(!html.includes('class="hero-art"'),'No separate right-hand image block');
+   assert.ok(!/<img[^>]+src="[^"]*black-band/.test(html),'Small campaign crop is not a full-width background');
+  }
   for(const [,href] of html.matchAll(/<a\b[^>]*href="([^"]+)"/g)) {
    const url=new URL(href.replaceAll('&amp;','&'),`http://localhost${pathname}`);
    if(url.origin!=='http://localhost') continue;
@@ -35,6 +44,14 @@ for (const lang of ['fr','en','ar']) {
    const meta=await sharp(path.join(root,src)).metadata();
    assert.equal(Number(width)/Number(height),meta.width/meta.height,`${src}: declared aspect ratio`);
    images++;
+  }
+  for(const [,srcset] of html.matchAll(/\bsrcset="([^"]+)"/gi)) {
+   for(const candidate of srcset.split(',')) {
+    const [src,descriptor]=candidate.trim().split(/\s+/);
+    if(!src.startsWith('/')) continue;
+    const meta=await sharp(path.join(root,src)).metadata();
+    assert.equal(meta.width,Number(descriptor.replace('w','')),`${src}: accurate srcset width`);
+   }
   }
   pages++;
  }
