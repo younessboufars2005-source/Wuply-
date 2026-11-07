@@ -12,7 +12,7 @@ const copy={
 ---
 <section class="store-hero immersive-hero">
  <div class="hero-glow" aria-hidden="true"></div>
- <figure class="hero-product"><img src="/images/wuply/hero-campaign.webp" width="911" height="390" alt={copy.alt} loading="eager" fetchpriority="high"/><figcaption>WUPLY / CAMPAIGN VISUAL</figcaption></figure>
+ <figure class="hero-product"><picture><source media="(max-width: 768px)" srcset="/images/wuply/hero-mobile.webp 620w" sizes="100vw" width="620" height="430"/><img src="/images/wuply/hero-campaign.webp" width="911" height="390" alt={copy.alt} loading="eager" fetchpriority="high"/></picture><figcaption>WUPLY / CAMPAIGN VISUAL</figcaption></figure>
  <div class="immersive-content wrap"><div class="store-hero-copy"><span class="eyebrow">{copy.eyebrow}</span><h1>{copy.title}</h1><p>{copy.text}</p><div class="hero-actions"><a class="button light" href={`/${lang}/product/`}>{copy.primary}<span>↗</span></a><a class="button ghost" href={`/${lang}/catalog/`}>{copy.secondary}</a></div></div></div>
  <div class="hero-baseline wrap"><span>01 — 19</span><a href="#collections">{s.navCollections}<span aria-hidden="true">↓</span></a><span>{s.colors}</span></div>
 </section>
