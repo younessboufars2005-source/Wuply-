@@ -13,7 +13,7 @@ const {lang,featured=false} = Astro.props;
 const t = braceletMessages[lang];
 const collections = featured ? [{...straps[0],variants:[straps[0].variants[0],straps[0].variants[10],straps[1].variants[0],straps[1].variants[2]]}] : straps;
 ---
-{collections.map(collection => <div class="bracelet-collection" id={featured ? undefined : collection.id}>{!featured && <div class="catalog-collection-heading"><h2>{collection.name[lang]}</h2><span>{String(collection.variants.length).padStart(2,'0')} / {storefront[lang].colors}</span></div>}<div class="bracelet-grid">{collection.variants.map(variant => {
+{collections.map(collection => <div class="bracelet-collection" id={featured ? undefined : collection.id} data-collection={featured ? undefined : collection.id}>{!featured && <div class="catalog-collection-heading"><h2>{collection.name[lang]}</h2><span>{String(collection.variants.length).padStart(2,'0')} / {storefront[lang].colors}</span></div>}<div class="bracelet-grid">{collection.variants.map(variant => {
 const href=`/${lang}/product/?strap=${encodeURIComponent(variant.id)}#configuration`;
 return <article class="bracelet-card">
  <a href={href} class="bracelet-card-media" tabindex="-1" aria-hidden="true">{variant.image && <ResponsivePhoto image={variant.image} alt={variant.image.alt[lang]} sizes="(max-width: 760px) calc((100vw - 56px) / 2), (max-width: 1100px) calc((100vw - 160px) / 3), 270px"/>}</a>

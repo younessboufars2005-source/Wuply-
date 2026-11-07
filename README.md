@@ -1,4 +1,4 @@
-# Wearable storefront · Phase 1
+# WUPLY · Boutique wearable premium
 
 Site Astro statique, îlots React limités au configurateur et au panier. FR, EN et AR (RTL). Aucun serveur métier, paiement ni collecte de coordonnées.
 

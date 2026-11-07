@@ -1,0 +1,6 @@
+﻿WUPLY premium redesign backup point
+Created: 2026-11-07 Europe/Paris
+Branch: main
+Commit: e3433874c77eee71d6ce9656f4ed8f34a4ac5c4e
+Working tree was clean before modification.
+Restore instructions: git restore . ; git clean only after reviewing untracked files.

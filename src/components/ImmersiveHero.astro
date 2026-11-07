@@ -1,20 +1,18 @@
 ---
-import {heroMedia,usableHero} from '../config/hero';
 import {storefront} from '../i18n/storefront';
-import {visualAlt} from '../data/visuals';
 import type {Locale} from '../types/catalog';
 interface Props {lang:Locale}
 const {lang}=Astro.props;
 const s=storefront[lang];
-const desktop=usableHero(heroMedia.desktop)?heroMedia.desktop:null;
-const mobile=usableHero(heroMedia.mobile,true)?heroMedia.mobile:null;
-const srcset=(image:NonNullable<typeof desktop>)=>image.sources?.filter(source=>source.width<=image.width).map(source=>`${source.src} ${source.width}w`).join(', ') || `${image.src} ${image.width}w`;
+const copy={
+ fr:{eyebrow:'WUPLY / WEARABLE TECHNOLOGY',title:'LA TECH QUI VOUS SUIT.\nLE STYLE QUI VOUS RESSEMBLE.',text:'Un bracelet connecté discret. Des bracelets interchangeables. Une application gratuite. Sans abonnement.',primary:'DÉCOUVRIR WUPLY',secondary:'EXPLORER LES BRACELETS',alt:'Bracelet WUPLY noir dans une composition sombre aux reflets cyan.'},
+ en:{eyebrow:'WUPLY / WEARABLE TECHNOLOGY',title:'WEARABLE TECH.\nEFFORTLESS STYLE.',text:'A discreet connected band. Interchangeable straps for every rhythm.',primary:'DISCOVER WUPLY',secondary:'EXPLORE THE BANDS',alt:'Black WUPLY band presented on a dark background.'},
+ ar:{eyebrow:'WUPLY / تكنولوجيا قابلة للارتداء',title:'تقنية تُرتدى.\nأناقة بلا تكلّف.',text:'سوار متصل بتصميم هادئ، وأحزمة قابلة للتبديل تناسب كل إيقاع.',primary:'اكتشف WUPLY',secondary:'استكشف الأحزمة',alt:'سوار WUPLY أسود على خلفية داكنة.'}
+}[lang];
 ---
-<section class:list={['store-hero','immersive-hero',{'has-desktop-photo':desktop,'has-mobile-photo':mobile}]}>
- {(desktop || mobile) && <picture class="immersive-background">
-   {mobile && <source media="(max-width: 760px)" srcset={srcset(mobile)} sizes="100vw" width={mobile.width} height={mobile.height}/>}
-   <img src={(desktop||mobile)!.src} srcset={srcset((desktop||mobile)!)} sizes="100vw" width={(desktop||mobile)!.width} height={(desktop||mobile)!.height} alt={visualAlt[lang].hero} loading="eager" fetchpriority="high" style={{'--hero-position':desktop?.position||'75% center','--hero-mobile-position':mobile?.position||'center'}}/>
- </picture>}
- <div class="immersive-content wrap"><div class="store-hero-copy"><span class="eyebrow">{s.tag}</span><h1>{s.hero}</h1><p>{s.intro}</p><a class="button light" href={`/${lang}/catalog/`}>{s.discover}<span>↗</span></a></div></div>
+<section class="store-hero immersive-hero">
+ <div class="hero-glow" aria-hidden="true"></div>
+ <figure class="hero-product"><img src="/images/wuply/hero-campaign.webp" width="911" height="390" alt={copy.alt} loading="eager" fetchpriority="high"/><figcaption>WUPLY / CAMPAIGN VISUAL</figcaption></figure>
+ <div class="immersive-content wrap"><div class="store-hero-copy"><span class="eyebrow">{copy.eyebrow}</span><h1>{copy.title}</h1><p>{copy.text}</p><div class="hero-actions"><a class="button light" href={`/${lang}/product/`}>{copy.primary}<span>↗</span></a><a class="button ghost" href={`/${lang}/catalog/`}>{copy.secondary}</a></div></div></div>
  <div class="hero-baseline wrap"><span>01 — 19</span><a href="#collections">{s.navCollections}<span aria-hidden="true">↓</span></a><span>{s.colors}</span></div>
 </section>
