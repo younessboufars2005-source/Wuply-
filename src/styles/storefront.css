@@ -305,6 +305,20 @@ body{overflow-x:hidden}
  .device-showcase{min-height:0}.device-campaign{min-height:0;height:240px}.device-showcase-copy{padding-block:36px}.featured-products{padding-block:38px}.wuply-faq{padding-block:44px}
 }
 @media(max-width:359px){.collection-sheet-grid{grid-template-columns:1fr}.sheet-card{aspect-ratio:1.65}.band-fan>a,.band-fan>a:last-child{flex-basis:82vw;width:82vw}.immersive-hero h1{font-size:38px}}
+
+/* Structural hero split: desktop media and mobile flow are independent. */
+.mobile-hero{display:none}
+@media(min-width:768px){
+ .hero-desktop{height:clamp(430px,38vw,510px);min-height:430px;max-height:510px}.hero-desktop .immersive-content{height:calc(100% - 40px);align-items:flex-start}.hero-desktop .store-hero-copy{padding-top:48px}.hero-desktop h1{font-size:clamp(36px,3.35vw,54px)}.hero-desktop h1 em{font-size:clamp(24px,2.25vw,34px)}.hero-desktop .hero-product{inset:0 3% 40px auto;width:40%;height:calc(100% - 40px);padding:54px 8px 20px;display:grid;place-items:start center}.hero-desktop .hero-product img{width:100%;height:auto;max-height:100%;object-fit:contain;object-position:center top;filter:none}.hero-desktop .hero-product:after{background:radial-gradient(circle,rgba(36,101,105,.2),transparent 66%)}
+}
+@media(max-width:767px){
+ html,body{width:100%;max-width:100%;overflow-x:hidden}.hero-desktop{display:none}.mobile-hero{display:block;width:100%;max-width:100%;overflow:hidden;background:#05090c;color:var(--mineral)}
+ .mobile-hero-copy{padding-top:24px;padding-bottom:0}.mobile-hero .eyebrow{font-size:10px;letter-spacing:.12em;color:#929aa5}.mobile-hero h1{font-family:var(--font-display);font-size:clamp(34px,10vw,42px);font-weight:550;line-height:.98;letter-spacing:-.05em;margin-block:13px 10px;max-width:12ch}.mobile-hero h1 span,.mobile-hero h1 em{display:block}.mobile-hero h1 em{font-family:var(--font);font-size:clamp(25px,7vw,30px);font-weight:400;font-style:italic;line-height:1.08;letter-spacing:-.035em;margin-top:8px;color:#d4d9dc}.mobile-hero p{font-size:clamp(14px,3.8vw,16px);line-height:1.5;max-width:35ch;margin:0 0 15px;color:#c5cbd0}.mobile-hero .hero-actions{display:grid;grid-template-columns:1fr;gap:10px;max-width:none}.mobile-hero .button{width:100%;height:50px;min-height:50px;padding:9px 17px;font-size:10px}.mobile-hero .button.light{background:linear-gradient(110deg,#72f5e8 0%,#73d8ff 35%,#a8a5ff 68%,#f1a8ff 100%);color:#071014;box-shadow:0 8px 30px rgba(115,216,255,.2)}.mobile-hero .button.ghost{border-color:rgba(218,228,232,.46);color:#fff;background:transparent}
+ .mobile-hero-media{width:100%;height:clamp(260px,72vw,320px);margin:10px 0 0;overflow:hidden;background:#05090c}.mobile-hero-media img{width:100%;height:calc(100% + 44px);max-width:100%;object-fit:contain;object-position:center top}
+ .collections-light{width:100%;max-width:100%;margin:0}.collections-light>.collection-sheet-grid,.collections-light>header{max-width:100%}.collection-sheet-grid{min-width:0}.sheet-card{min-width:0}.sheet-card>img{max-width:100%}
+ .featured-products,.personalization-premium,.material-editorial,.app-experience,.wuply-faq,.device-showcase,.benefit-bar{width:100%;max-width:100%}.bracelet-grid{min-width:0}.bracelet-card{min-width:0}.bracelet-card-media{overflow:hidden}.bracelet-card-media img{max-width:100%;object-fit:contain}
+}
+@media(max-width:359px){.mobile-hero-copy{padding-inline:18px}.mobile-hero h1{font-size:34px}.mobile-hero-media{height:250px}}
 @media(max-width:360px){
  :root{--gutter:16px}.header{padding-inline:12px}.wordmark img{width:82px}.languages{font-size:8px}.store-hero{min-height:650px}.store-hero-copy{padding-bottom:266px}.store-hero h1{font-size:29px}.hero-product{height:235px}.benefit-bar strong{font-size:9px}.featured-products .bracelet-grid,.catalog-page .bracelet-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 7px}.bracelet-card-info{padding-inline:8px}.bracelet-card-info h3,.catalog-page .bracelet-card-info h3{font-size:11.5px}.card-actions{align-items:center}.bracelet-card-info .text-link{font-size:9px}.quick-add{width:38px;height:38px;min-width:38px}.form-grid input{width:100%}
 }
