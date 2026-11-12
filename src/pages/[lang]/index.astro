@@ -20,11 +20,12 @@ const metaTitle={fr:'WUPLY — La tech qui vous suit',en:'WUPLY — Wearable tec
 ---
 <Base lang={lang} title={metaTitle} description={s.description}>
  <ImmersiveHero lang={lang}/>
+
+ <section class="collections-light wrap" id="collections"><header data-reveal><span class="eyebrow">{c.collectionsLabel}</span><h2><span>{c.collectionsTitle.split('\n')[0]}</span><em>{c.collectionsTitle.split('\n')[1]}</em></h2></header><div class="collection-sheet-grid"><a href={`/${lang}/catalog/#classique`} class="sheet-card"><img src="/images/wuply/classiques-15.png" width="1536" height="1024" alt={`${s.classic} — 15 ${c.models}`} loading="lazy" decoding="async"/><div><span>15 {c.models}</span><h3>{s.classic}</h3><b aria-hidden="true"><ArrowIcon /></b></div></a><a href={`/${lang}/catalog/#originale`} class="sheet-card"><img src="/images/wuply/originaux-4.png" width="1536" height="1024" alt={`${s.original} — 4 ${c.models}`} loading="lazy" decoding="async"/><div><span>4 {c.models}</span><h3>{s.original}</h3><b aria-hidden="true"><ArrowIcon /></b></div></a></div></section>
+
  <section class="benefit-bar" aria-label={c.benefits.join(', ')}>{c.benefits.map((item,i)=><div><span class="benefit-icon" aria-hidden="true">{['▯','≋','◇','ϟ'][i]}</span><strong>{item}</strong></div>)}</section>
 
  <section class="device-showcase" id="device"><div class="device-campaign"><img src="/images/wuply/device-campaign.webp" width="820" height="285" alt={alt.hero} loading="lazy" decoding="async"/></div><div class="device-showcase-copy wrap" data-reveal><span class="eyebrow">{c.deviceLabel}</span><h2>{c.deviceTitle}</h2><p>{c.deviceText}</p><a class="button light" href={`/${lang}/product/`}>{c.deviceCta}<ArrowIcon /></a></div></section>
-
- <section class="collections-light wrap" id="collections"><header data-reveal><span class="eyebrow">{c.collectionsLabel}</span><h2>{c.collectionsTitle}</h2></header><div class="collection-sheet-grid"><a href={`/${lang}/catalog/#classique`} class="sheet-card"><img src="/images/wuply/classiques-15.png" width="1536" height="1024" alt={`${s.classic} — 15 ${c.models}`} loading="lazy" decoding="async"/><div><span>15 {c.models}</span><h3>{s.classic}</h3><b aria-hidden="true"><ArrowIcon /></b></div></a><a href={`/${lang}/catalog/#originale`} class="sheet-card"><img src="/images/wuply/originaux-4.png" width="1536" height="1024" alt={`${s.original} — 4 ${c.models}`} loading="lazy" decoding="async"/><div><span>4 {c.models}</span><h3>{s.original}</h3><b aria-hidden="true"><ArrowIcon /></b></div></a></div></section>
 
  <section class="featured-products wrap" id="catalogue"><div class="section-title" data-reveal><div><span class="eyebrow">04 / {s.navCatalog}</span><h2>{c.selection}</h2><p>{c.selectionText}</p></div><a class="text-link" href={`/${lang}/catalog/`}>{s.all}<ArrowIcon /></a></div><BraceletCollections lang={lang} featured/></section>
 
