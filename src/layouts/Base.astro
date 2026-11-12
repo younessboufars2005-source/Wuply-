@@ -6,6 +6,7 @@ import { site } from '../config/site';
 import { locales, translations } from '../i18n';
 import type { Locale } from '../types/catalog';
 import { storefront } from '../i18n/storefront';
+import ArrowIcon from '../components/ArrowIcon.astro';
 interface Props { lang: Locale; title: string; description?: string; route?: string }
 const { lang, title, description, route = '' } = Astro.props;
 const t = translations[lang];
@@ -38,7 +39,7 @@ const navCopy = {
     <a class="skip" href="#main">{t.skip}</a>
     <header class="header">
       <a class="wordmark" href={`/${lang}/`} aria-label={site.name || t.home}>
-        {site.logo ? <img src={site.logo} alt={site.name} width="140" height="32" /> : site.name || <span class="brand-symbol" aria-hidden="true">◒</span>}
+        {site.logo ? <img src={site.logo} alt={site.name} width="140" height="32" /> : site.name || <span class="brand-symbol" aria-hidden="true">W</span>}
       </a>
       <nav class="desktop-nav" aria-label={t.menu}>
         <a href={`/${lang}/`}>{t.home}</a>
@@ -54,8 +55,8 @@ const navCopy = {
     </header>
     <main id="main"><slot /></main>
     <footer class="footer">
-      <div class="footer-main"><div><a class="wordmark" href={`/${lang}/`} aria-label={site.name || t.home}>{site.logo ? <img src={site.logo} alt={site.name} width="140" height="32"/> : site.name || <span class="brand-symbol" aria-hidden="true">◒</span>}</a><h2>{s.footerTitle}</h2><p>{s.footerText}</p></div>
-        <nav aria-label={s.navCollections}><span class="eyebrow">{s.navCollections}</span><a href={`/${lang}/catalog/#classique`}>{s.classic}</a><a href={`/${lang}/catalog/#originale`}>{s.original}</a><a href={`/${lang}/catalog/`}>{s.navCatalog} ↗</a></nav>
+      <div class="footer-main"><div><a class="wordmark" href={`/${lang}/`} aria-label={site.name || t.home}>{site.logo ? <img src={site.logo} alt={site.name} width="140" height="32"/> : site.name || <span class="brand-symbol" aria-hidden="true">W</span>}</a><h2>{s.footerTitle}</h2><p>{s.footerText}</p></div>
+        <nav aria-label={s.navCollections}><span class="eyebrow">{s.navCollections}</span><a href={`/${lang}/catalog/#classique`}>{s.classic}</a><a href={`/${lang}/catalog/#originale`}>{s.original}</a><a class="inline-icon-link" href={`/${lang}/catalog/`}>{s.navCatalog}<ArrowIcon /></a></nav>
         <nav aria-label={s.help}><span class="eyebrow">{s.help}</span><a href={`/${lang}/#information`}>{s.contact}</a><a href={`/${lang}/#delivery`}>{s.shipping}</a><a href={`/${lang}/#returns`}>{s.returns}</a><a href={`/${lang}/#legal`}>{s.legal}</a>{site.email && <a href={`mailto:${site.email}`}>{site.email}</a>}</nav>
       </div><div class="footer-bottom"><span>{s.commercial}</span><span>{s.independent}</span></div>
     </footer>

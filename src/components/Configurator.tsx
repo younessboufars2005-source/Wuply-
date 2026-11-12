@@ -8,6 +8,7 @@ import { addItem } from '../utils/cart.mjs';
 import { configurationPrice, money, variants } from '../utils/pricing';
 import type { Configuration, Locale } from '../types/catalog';
 import {photoProps} from '../utils/images';
+import ArrowIcon from './ArrowIcon';
 
 export default function Configurator({lang}: {lang: Locale}) {
  const t = translations[lang];
@@ -64,9 +65,9 @@ export default function Configurator({lang}: {lang: Locale}) {
     </details>)}
    </fieldset> : <p className="muted">{t.noVariants}</p>}
    <label className="quantity-row">{t.quantity}<input type="number" min="1" max="99" value={quantity} onChange={e => {setQuantity(Math.max(1,Math.min(99,Math.floor(Number(e.target.value))||1)));setAdded(false);}}/></label>
-   {selected && <button className="button light full" disabled={!ready} onClick={() => add(strapConfiguration)}>{bt.add}<span>↗</span></button>}
+   {selected && <button className="button light full" disabled={!ready} onClick={() => add(strapConfiguration)}>{bt.add}<ArrowIcon /></button>}
    <p role="status" className="notice">{error ? t[error] : added ? t.added : t.local}</p>
-   {added && <a className="text-link" href={`/${lang}/cart/`}>{t.cart} ↗</a>}
+   {added && <a className="text-link" href={`/${lang}/cart/`}>{t.cart}<ArrowIcon /></a>}
    <p className="compatibility-note">{s.compatibility}</p>
    <details className="device-options"><summary>{s.device}<span>+</span></summary>
     {available.some(v => v.price?.validated) && <fieldset><legend>{t.extras}</legend>{available.filter(v => v.price?.validated).map(v => <label className="quantity-row" key={v.id}>{v.name[lang]}<input type="number" min="0" max="99" value={extras[v.id] || 0} onChange={e => {setExtras({...extras,[v.id]:Math.max(0,Math.min(99,Math.floor(Number(e.target.value))||0))});setAdded(false);}}/></label>)}</fieldset>}
