@@ -258,6 +258,38 @@ body{overflow-x:hidden}
 }
 @media(max-width:375px){.hero-product{height:205px}.immersive-hero h1{font-size:clamp(34px,10vw,40px)}.collections-light h2{font-size:29px}.sheet-card>div{inset:auto 9px 9px}.sheet-card h3{font-size:14px}}
 .collections-light h2{white-space:normal}.collections-light h2 span,.collections-light h2 em{display:block}.collections-light h2 em{font-family:var(--font);font-size:clamp(28px,3vw,46px);font-weight:400;font-style:italic;margin-top:4px}[dir=rtl] .collections-light h2 em{font-family:'Noto Sans Arabic',sans-serif;font-style:normal}
+
+/* Final compact pass — proportion corrections after reference comparison. */
+.store-hero.immersive-hero{height:clamp(460px,42vw,540px);min-height:460px;max-height:540px}
+.immersive-content{align-items:flex-start;height:calc(100% - 40px)}
+.immersive-hero .store-hero-copy{padding-top:58px;padding-bottom:18px}
+.immersive-hero h1{font-size:clamp(38px,3.7vw,58px);margin-block:13px 10px}
+.immersive-hero h1 em{font-size:clamp(25px,2.5vw,38px);margin-top:6px}
+.store-hero-copy>p{font-size:14px;line-height:1.55;margin-bottom:15px;max-width:500px}
+.hero-actions .button{min-height:42px;padding:9px 17px}
+.hero-actions .button.light{background:linear-gradient(110deg,#72f5e8 0%,#73d8ff 35%,#a8a5ff 68%,#f1a8ff 100%);background-size:140% 100%;box-shadow:0 8px 30px rgba(115,216,255,.2);transition:background-position .3s ease,transform .25s ease,box-shadow .25s ease}
+.hero-actions .button.light:hover{background-position:100% 0;transform:translateY(-1px);box-shadow:0 10px 32px rgba(115,216,255,.27)}
+.hero-product{inset:0 4% 40px auto;width:39%;height:calc(100% - 40px);padding:34px 18px 25px}.hero-product img{max-width:100%;max-height:100%;object-fit:contain}.hero-baseline{height:40px;min-height:40px}
+.collections-light{padding-block:38px 44px}.collections-light header{margin-bottom:18px}.collections-light header .eyebrow{margin-bottom:10px}.collections-light h2{font-size:clamp(34px,3.5vw,52px);margin-bottom:0}.collections-light h2 em{font-size:clamp(27px,2.5vw,36px);margin-top:2px}
+.collection-sheet-grid{gap:16px}.sheet-card{height:clamp(250px,20vw,300px);aspect-ratio:auto;border-radius:20px;background:#eef0ef}.sheet-card>img{width:100%;height:100%;object-fit:cover;object-position:center}.sheet-card:after{background:linear-gradient(0deg,rgba(5,8,10,.88),rgba(5,8,10,.06) 58%)}.sheet-card>div{inset:auto 20px 17px}.sheet-card h3{font-size:clamp(20px,2vw,30px)}
+.benefit-bar>div{min-height:60px;padding:9px 12px}.benefit-icon{font-size:18px}.device-campaign{min-height:280px;max-height:320px}.device-showcase-copy{padding-block:32px}.device-showcase-copy h2{font-size:clamp(30px,3.4vw,46px);margin-block:12px}.device-showcase-copy p{margin-bottom:16px}
+.featured-products{padding-block:42px}.section-title{margin-bottom:22px}.section-title h2{font-size:clamp(30px,3.3vw,46px)}.featured-products .bracelet-card-media,.featured-products .bracelet-card-media img,.catalog-page .bracelet-card-media,.catalog-page .bracelet-card-media img{height:250px;min-height:250px}
+.personalization-premium{padding-block:42px}.personal-copy h2{font-size:clamp(32px,3.7vw,50px);margin-block:14px}.band-fan{height:320px}.band-fan img{height:275px}
+.material-editorial{padding-block:40px}.material-image{min-height:280px}.material-copy{padding:clamp(24px,3.3vw,44px)}.material-copy h2{font-size:clamp(30px,3.4vw,46px);margin-block:13px}.material-copy p{line-height:1.7}
+.app-experience{min-height:340px;padding-block:38px}.app-experience h2{font-size:clamp(40px,5vw,64px);margin-block:15px}.wuply-faq{padding-block:42px}.wuply-faq h2{font-size:clamp(30px,3.4vw,46px)}
+
+@media(max-width:1024px){
+ .store-hero.immersive-hero{height:500px;min-height:500px}.immersive-hero .store-hero-copy{padding-top:52px}.hero-product{width:38%;padding-block:40px}.sheet-card{height:250px}.featured-products .bracelet-card-media,.featured-products .bracelet-card-media img,.catalog-page .bracelet-card-media,.catalog-page .bracelet-card-media img{height:230px;min-height:230px}
+}
+@media(max-width:768px){
+ .store-hero.immersive-hero{height:auto;min-height:0}.immersive-content{height:auto}.immersive-hero .store-hero-copy{padding-top:24px;padding-bottom:0}.immersive-hero h1{font-size:clamp(34px,10vw,46px);margin-block:12px 9px}.immersive-hero h1 em{font-size:clamp(24px,7vw,29px)}.store-hero-copy>p{font-size:14px;margin-bottom:14px}.hero-product{inset:auto;width:100%;height:205px;padding:5px 15px 0;margin-top:8px}.hero-baseline{height:38px;min-height:38px}
+ .collections-light{padding-block:30px 34px}.collections-light header{margin-bottom:15px}.collections-light h2{font-size:clamp(28px,7.7vw,38px)}.collections-light h2 em{font-size:clamp(22px,5.8vw,29px)}.collection-sheet-grid{gap:9px}.sheet-card{height:auto;aspect-ratio:1.1;border-radius:14px}.sheet-card>img{object-fit:cover}.sheet-card>div{inset:auto 10px 10px}.sheet-card h3{font-size:clamp(14px,4vw,19px)}
+ .device-campaign{min-height:220px}.device-showcase-copy,.featured-products,.personalization-premium,.wuply-faq{padding-block:34px}.featured-products .bracelet-card-media,.featured-products .bracelet-card-media img,.catalog-page .bracelet-card-media,.catalog-page .bracelet-card-media img{height:auto;min-height:0}.material-copy{padding-block:30px}.material-image{min-height:0}.app-experience{min-height:300px;padding-block:34px}
+}
+@media(max-width:430px){
+ .immersive-hero .store-hero-copy{padding-top:20px}.hero-product{height:190px}.collections-light{padding-block:28px 32px}.sheet-card{aspect-ratio:1/1.08}.sheet-card span{font-size:6px}.sheet-card h3{font-size:14px}
+}
+@media(max-width:390px){.hero-product{height:180px}.hero-actions .button{min-height:44px}.collections-light h2{font-size:28px}.collections-light h2 em{font-size:22px}.sheet-card>div{inset:auto 8px 8px}.sheet-card h3{font-size:13px}}
 @media(max-width:360px){
  :root{--gutter:16px}.header{padding-inline:12px}.wordmark img{width:82px}.languages{font-size:8px}.store-hero{min-height:650px}.store-hero-copy{padding-bottom:266px}.store-hero h1{font-size:29px}.hero-product{height:235px}.benefit-bar strong{font-size:9px}.featured-products .bracelet-grid,.catalog-page .bracelet-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 7px}.bracelet-card-info{padding-inline:8px}.bracelet-card-info h3,.catalog-page .bracelet-card-info h3{font-size:11.5px}.card-actions{align-items:center}.bracelet-card-info .text-link{font-size:9px}.quick-add{width:38px;height:38px;min-width:38px}.form-grid input{width:100%}
 }
