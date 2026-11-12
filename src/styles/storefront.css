@@ -27,9 +27,9 @@ html,body{max-width:100%;overflow-x:hidden}body{background:var(--carbon);color:v
 }
 @media(max-width:359px){:root{--gutter:16px}.header{padding-inline:16px}.wordmark img{width:104px}.collection-sheet-grid{grid-template-columns:1fr}.sheet-card{aspect-ratio:1.65}.featured-products .bracelet-grid,.catalog-page .bracelet-grid{gap:8px}.bracelet-card-info p{display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
-@media(max-width:767px){.store-hero.immersive-hero{height:auto;min-height:0}.immersive-content.wrap{width:auto;max-width:none;margin:0;padding-inline:20px}.store-hero-copy{width:auto;max-width:none;overflow:hidden}.store-hero h1{font-size:clamp(32px,9vw,38px);max-width:10.5ch}.store-hero-copy>p{overflow-wrap:anywhere}.hero-actions{width:100%;max-width:100%}.hero-product{margin-top:-120px}.hero-product picture{position:relative;z-index:1}.immersive-content{position:relative;z-index:3}}
+@media(max-width:767px){.store-hero.immersive-hero{height:auto;min-height:0}.immersive-content.wrap{width:auto;max-width:none;margin:0;padding-inline:20px}.store-hero-copy{width:auto;max-width:none;overflow:hidden}.store-hero h1{font-size:clamp(32px,9vw,36px);max-width:none}.store-hero h1>span{max-width:10.5ch}.store-hero-copy>p{overflow-wrap:anywhere}.hero-actions{width:100%;max-width:100%;gap:8px}.hero-actions .button{height:46px}.hero-product{height:clamp(230px,62vw,270px);margin-top:14px}.hero-product picture{position:relative;z-index:1}.immersive-content{position:relative;z-index:3}}
 [dir=rtl] h1,[dir=rtl] h2,[dir=rtl] h3,[dir=rtl] .eyebrow{letter-spacing:0}[dir=rtl] .store-hero h1,[dir=rtl] .store-hero h1 em{line-height:1.35}
 
-/* Final reference alignment: tonal collection cards and a tighter mobile fold. */
+/* Final reference alignment: tonal collection cards. */
 .sheet-card:after{background:linear-gradient(0deg,rgba(4,8,11,.94),transparent 64%),linear-gradient(180deg,rgba(4,10,14,.2),rgba(4,10,14,.38))}
-@media(max-width:767px){.hero-product{height:clamp(255px,68vw,300px);margin-top:-145px}}
+.hero-actions .button.light{background:linear-gradient(100deg,#bff8ed 0%,#8fdaf5 48%,#b6a5ee 100%);color:#071016}
