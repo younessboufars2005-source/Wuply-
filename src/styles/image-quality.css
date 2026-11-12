@@ -15,31 +15,11 @@
 .config-gallery figcaption {padding:15px 25px;}
 .bracelet-option .native-photo {width:100%;max-width:100%;height:auto;aspect-ratio:3/4;}
 .cart-bracelet.native-photo {width:90px;max-width:90px;height:120px;object-fit:contain;}
-.store-hero.immersive-hero {display:flex;flex-direction:column;align-items:stretch;position:relative;isolation:isolate;min-height:680px;padding:0;background:#08090b;overflow:hidden;}
-.immersive-background {position:absolute;inset:0;z-index:-2;width:100%;height:100%;}
-.immersive-hero:not(.has-desktop-photo) .immersive-background {display:none;}
-.immersive-background img {width:100%;height:100%;object-fit:cover;object-position:var(--hero-position,75% center);filter:none;}
-.immersive-hero::after {content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(8,9,11,.92) 0%,rgba(8,9,11,.6) 36%,rgba(8,9,11,0) 72%),linear-gradient(0deg,#08090b 0%,transparent 22%);}
-.immersive-content {position:relative;display:flex;align-items:center;flex:1;min-height:600px;}
-.immersive-hero .store-hero-copy {max-width:780px;padding-block:65px;}
-.immersive-hero h1 {font-size:clamp(60px,7.8vw,124px);}
-.immersive-hero .hero-baseline {position:relative;width:100%;margin-top:0;}
-[dir=rtl] .immersive-hero::after {background:linear-gradient(270deg,rgba(8,9,11,.92),rgba(8,9,11,.6) 36%,transparent 72%),linear-gradient(0deg,#08090b,transparent 22%);}
 @media(max-width:1100px){.bracelet-card-media{min-height:320px;}}
 @media(max-width:760px){
- .store-hero.immersive-hero{min-height:620px;display:flex;gap:0;}
- .immersive-content{min-height:540px;align-items:end;padding-bottom:30px;}
- .immersive-hero .store-hero-copy{padding-block:40px 0;max-width:100%;}
- .immersive-hero h1{font-size:clamp(48px,12vw,78px);line-height:1.02;}
- .immersive-hero .hero-baseline{margin-top:0;}
- .immersive-hero::after{background:linear-gradient(0deg,#08090b 0%,rgba(8,9,11,.8) 45%,rgba(8,9,11,.05) 100%);}
- .immersive-background img{object-fit:contain;object-position:top center;}
- .immersive-hero.has-mobile-photo .immersive-background{display:block;}
- .has-mobile-photo .immersive-background img{object-fit:cover;object-position:var(--hero-mobile-position,center);}
  .collection-panel-image{min-height:200px;}
  .bracelet-card-media{min-height:0;aspect-ratio:3/4;}
  .config-gallery figure{min-height:400px;}
  .config-gallery .variant-preview{width:min(100%,270px);height:auto;}
  .lifestyle-editorial>.native-photo{align-self:center;width:min(100%,var(--photo-max));}
 }
-@media(prefers-reduced-motion:reduce){.immersive-hero .store-hero-copy{animation:none;}}

@@ -7,3 +7,4 @@ dist/
 !.env.example
 assets/inbox/*
 !assets/inbox/.gitkeep
+qa-screenshots/

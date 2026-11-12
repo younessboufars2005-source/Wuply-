@@ -11,13 +11,9 @@ const copy={
  ar:{eyebrow:'WUPLY / تكنولوجيا قابلة للارتداء',title:'تقنية تُرتدى.',subtitle:'أناقة بلا تكلّف.',text:'سوار متصل بتصميم هادئ، وأحزمة قابلة للتبديل تناسب كل إيقاع.',primary:'اكتشف WUPLY',secondary:'استكشف الأحزمة',alt:'سوار WUPLY أسود على خلفية داكنة.'}
 }[lang];
 ---
-<section class="store-hero immersive-hero hero-desktop">
+<section class="store-hero immersive-hero">
  <div class="hero-glow" aria-hidden="true"></div>
- <figure class="hero-product"><img src="/images/wuply/hero-campaign.webp" width="911" height="390" alt={copy.alt} loading="eager" fetchpriority="high"/><figcaption>WUPLY / CAMPAIGN VISUAL</figcaption></figure>
  <div class="immersive-content wrap"><div class="store-hero-copy"><span class="eyebrow">{copy.eyebrow}</span><h1><span>{copy.title}</span><em>{copy.subtitle}</em></h1><p>{copy.text}</p><div class="hero-actions"><a class="button light" href={`/${lang}/product/`}>{copy.primary}<ArrowIcon /></a><a class="button ghost" href={`/${lang}/catalog/`}>{copy.secondary}</a></div></div></div>
+ <figure class="hero-product"><picture><source media="(max-width: 767px)" srcset="/images/wuply/hero-mobile.webp 620w" sizes="100vw" width="620" height="430"/><img src="/images/wuply/hero-campaign.webp" width="911" height="390" alt={copy.alt} loading="eager" fetchpriority="high"/></picture><figcaption>WUPLY / CAMPAIGN VISUAL</figcaption></figure>
  <div class="hero-baseline wrap"><span>01 — 19</span><a href="#collections">{s.navCollections}<ArrowIcon direction="down" /></a><span>{s.colors}</span></div>
-</section>
-<section class="mobile-hero">
- <div class="mobile-hero-copy wrap"><span class="eyebrow">{copy.eyebrow}</span><h1><span>{copy.title}</span><em>{copy.subtitle}</em></h1><p>{copy.text}</p><div class="hero-actions"><a class="button light" href={`/${lang}/product/`}>{copy.primary}<ArrowIcon /></a><a class="button ghost" href={`/${lang}/catalog/`}>{copy.secondary}</a></div></div>
- <figure class="mobile-hero-media"><img src="/images/wuply/hero-mobile.webp" width="620" height="430" alt={copy.alt} loading="eager" fetchpriority="high"/></figure>
 </section>
